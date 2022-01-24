@@ -22,7 +22,7 @@
   "author": "5t3ph",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0",
     "a11y-color-tokens": "^0.5.0",
     "autoprefixer": "^10.4.2",
     "cross-env": "^7.0.3",
