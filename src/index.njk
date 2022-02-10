@@ -1,5 +1,15 @@
 ---
 layout: base.njk
 title: Hello World
+templateEngineOverride: md, njk
 ---
+
+<h2>{{ collections.articles.length }} Posts</h2>
+
+{% for article in collections.articles | reverse %}
+  <div><a href="{{ article.url }}">{{ article.data.title }}</a></div>
+  <p>{{ article.data.date }}</p>
+
+  <div>{{ article.templateContent | striptags(true) | truncate(280) }}</div>
+{% endfor %}
 
