@@ -88,7 +88,7 @@ We need to add a link to the new stylesheet in the head of our `index.html` file
 So when you reload the page you will see an immediate change as styles are applied. In this case, a different font, a padding of 3rem all around, and font-size of 20px.
 
 The problem is when we make changes to the SCSS partials and we have to recompile. The node-sass package does have a watch switch, but I have often found it not very robust:
-```node
+```js
 node-sass -w stylesheets/main.scss dist/main.css
 ```
 The watch command does not watch and compile JavaScript. There are a few solutions: Grunt and Gulp for instance. I used Gulp for years and relied a long on the work Chris Ferdinandi did on a [gulp-boilerplate][gulp]. I would modify it for my needs on different projects and it works extremely well.

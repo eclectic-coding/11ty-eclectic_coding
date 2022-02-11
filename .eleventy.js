@@ -1,8 +1,10 @@
 const { DateTime } = require("luxon");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
 
   // Plugin section
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   // Watch targets
   eleventyConfig.addWatchTarget("./src/sass/");
