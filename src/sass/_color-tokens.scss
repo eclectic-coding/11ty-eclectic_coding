@@ -3,29 +3,29 @@
   Modify colors in src/_data/colors.js
  */
 
-$color-primary: hsl(258, 75%, 50%) !default;
-$color-on-primary: hsl(0, 0%, 100%) !default;
-$color-error: hsl(350, 75%, 50%) !default;
-$color-on-error: hsl(352.5, 100%, 98.4%) !default;
-$color-text: hsl(258, 20%, 30%) !default;
-$color-on-text: hsl(255.79999999999995, 12.8%, 70.8%) !default;
+$color-primary: hsl(272,53%,66%) !default;
+$color-on-primary: hsl(271.4, 42.3%, 20.4%) !default;
+$color-secondary: hsl(310,55%,62%) !default;
+$color-on-secondary: hsl(309.4, 54.8%, 18.2%) !default;
+$color-background: hsl(209,85%,11%) !default;
+$color-on-background: hsl(208.70000000000005, 27.6%, 52.4%) !default;
 
-$base-color-tokens: ("primary", "error", "text");
+$base-color-tokens: ("primary", "secondary", "background");
 
 $color-tokens: (
   "color-primary": $color-primary,
   "color-on-primary": $color-on-primary,
-  "color-error": $color-error,
-  "color-on-error": $color-on-error,
-  "color-text": $color-text,
-  "color-on-text": $color-on-text
+  "color-secondary": $color-secondary,
+  "color-on-secondary": $color-on-secondary,
+  "color-background": $color-background,
+  "color-on-background": $color-on-background
 ) !default;
 
 @mixin color-tokens() {
   --color-primary: #{$color-primary};
   --color-on-primary: #{$color-on-primary};
-  --color-error: #{$color-error};
-  --color-on-error: #{$color-on-error};
-  --color-text: #{$color-text};
-  --color-on-text: #{$color-on-text};
+  --color-secondary: #{$color-secondary};
+  --color-on-secondary: #{$color-on-secondary};
+  --color-background: #{$color-background};
+  --color-on-background: #{$color-on-background};
 }

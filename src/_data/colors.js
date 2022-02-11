@@ -1,15 +1,14 @@
 module.exports = [
   {
     name: "primary",
-    color: "hsl(258, 75%, 50%)",
-    onColor: "hsl(0, 0%, 100%)",
+    color: "hsl(272,53%,66%)"
   },
   {
-    name: "error",
-    color: "hsl(350, 75%, 50%)",
+    name: "secondary",
+    color: "hsl(310,55%,62%)"
   },
   {
-    name: "text",
-    color: "hsl(258, 20%, 30%)",
-  },
+    name: "background",
+    color: "hsl(209,85%,11%)",
+  }
 ];

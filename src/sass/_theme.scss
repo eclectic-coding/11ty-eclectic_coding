@@ -2,7 +2,7 @@
 
 $color-links: "var(--color-primary)" !default;
 $color-grey-hue: $color-primary !default;
-$color-background-body: scale-color($color-grey-hue, $lightness: 98%) !default;
+$color-background-body: $color-background !default;
 $color-grey-hue: hue($color-grey-hue);
 
 $font-family: "Noto Sans JP", sans-serif !default;
@@ -20,6 +20,6 @@ $font-weight-bold: 700 !default;
 
 body {
   background-color: var(--background-body);
-  color: var(--color-text);
+  color: var(--color-on-background);
   font-family: $font-family;
 }

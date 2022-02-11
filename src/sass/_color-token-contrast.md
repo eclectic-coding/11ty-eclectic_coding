@@ -6,26 +6,24 @@ title: Color Token Contrast
 
 ## color-primary
   - `color-on-primary`
-  - `color-on-error`
+  - `color-background`
 
 ## color-on-primary
   - `color-primary`
-  - `color-error`
-  - `color-text`
+  - `color-secondary`
 
-## color-error
+## color-secondary
   - `color-on-primary`
-  - `color-on-error`
+  - `color-on-secondary`
+  - `color-background`
 
-## color-on-error
+## color-on-secondary
+  - `color-secondary`
+
+## color-background
   - `color-primary`
-  - `color-error`
-  - `color-text`
+  - `color-secondary`
+  - `color-on-background`
 
-## color-text
-  - `color-on-primary`
-  - `color-on-error`
-  - `color-on-text`
-
-## color-on-text
-  - `color-text`
+## color-on-background
+  - `color-background`
