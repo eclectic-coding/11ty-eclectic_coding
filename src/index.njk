@@ -11,12 +11,13 @@ pagination:
 
 <h2>{{ collections.articles.length }} Posts</h2>
 
-{% for article in articleList %}
-  <div><a href="{{ article.url }}">{{ article.data.title }}</a></div>
-  <p>{{ article.data.date }}</p>
-
-  <div>{{ article.templateContent | excerpt }}</div>
-{% endfor %}
+{%- for article in articleList -%}
+  <article class="article__card">
+    <h2><a href="{{ article.url }}">{{ article.data.title }}</a></h2>
+    <p>{{ article.data.date }}</p>
+    <p class="content">{{ article.templateContent | excerpt }}</p>
+  </article>
+{%- endfor -%}
 
 {% if pagination.pageLinks.length > 1 %}
   <nav id="my-pagination" class="pagination" aria-labelledby="my-pagination">

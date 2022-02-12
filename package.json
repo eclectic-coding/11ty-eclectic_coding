@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "tokens": "npx a11y-color-tokens --outputDirPath='src/sass' --colorTokensPath='src/_data/colors.js'",
-    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch:sass": "sass --watch src/sass:public/css",
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "build:sass": "sass src/sass:public/css",
     "build:eleventy": "npx @11ty/eleventy",

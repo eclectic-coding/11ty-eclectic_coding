@@ -4,26 +4,36 @@ title: Color Token Contrast
 
 > The following are contrast safe combinations as calculated for _normal_ text based on WCAG AA 4.5
 
-## color-primary
-  - `color-on-primary`
-  - `color-background`
-
-## color-on-primary
-  - `color-primary`
-  - `color-secondary`
-
-## color-secondary
+## color-background-primary
+  - `color-on-background-primary`
+  - `color-on-background-secondary`
   - `color-on-primary`
   - `color-on-secondary`
-  - `color-background`
+
+## color-on-background-primary
+  - `color-background-primary`
+
+## color-background-secondary
+  - `color-on-background-secondary`
+  - `color-on-primary`
+  - `color-on-secondary`
+
+## color-on-background-secondary
+  - `color-background-primary`
+  - `color-background-secondary`
+
+## color-primary
+  - `color-on-secondary`
+
+## color-on-primary
+  - `color-background-primary`
+  - `color-background-secondary`
+
+## color-secondary
+  - `color-on-secondary`
 
 ## color-on-secondary
-  - `color-secondary`
-
-## color-background
+  - `color-background-primary`
+  - `color-background-secondary`
   - `color-primary`
   - `color-secondary`
-  - `color-on-background`
-
-## color-on-background
-  - `color-background`

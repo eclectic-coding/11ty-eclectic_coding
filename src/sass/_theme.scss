@@ -2,7 +2,7 @@
 
 $color-links: "var(--color-primary)" !default;
 $color-grey-hue: $color-primary !default;
-$color-background-body: $color-background !default;
+$color-background-body: $color-background-secondary !default;
 $color-grey-hue: hue($color-grey-hue);
 
 $font-family: "Noto Sans JP", sans-serif !default;
@@ -16,10 +16,11 @@ $font-weight-bold: 700 !default;
   --grey-light: hsl(#{$color-grey-hue}, 20%, 85%);
   --background-body: #{$color-background-body};
   --font-weight-bold: #{$font-weight-bold};
+  --article-card-body: var(--color-background-primary);
 }
 
 body {
   background-color: var(--background-body);
-  color: var(--color-on-background);
+  color: var(--color-on-background-primary);
   font-family: $font-family;
 }

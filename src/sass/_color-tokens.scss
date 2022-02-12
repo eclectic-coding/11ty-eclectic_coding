@@ -3,29 +3,35 @@
   Modify colors in src/_data/colors.js
  */
 
-$color-primary: hsl(272,53%,66%) !default;
-$color-on-primary: hsl(271.4, 42.3%, 20.4%) !default;
-$color-secondary: hsl(310,55%,62%) !default;
-$color-on-secondary: hsl(309.4, 54.8%, 18.2%) !default;
-$color-background: hsl(209,85%,11%) !default;
-$color-on-background: hsl(208.70000000000005, 27.6%, 52.4%) !default;
+$color-background-primary: hsl(0, 0%, 100%) !default;
+$color-on-background-primary: rgb(118, 118, 118) !default;
+$color-background-secondary: hsl(0, 0%, 97%) !default;
+$color-on-background-secondary: hsl(218, 23%, 23%) !default;
+$color-primary: hsl(229, 76%, 66%) !default;
+$color-on-primary: hsl(228, 61.8%, 17.5%) !default;
+$color-secondary: hsl(216, 15%, 52%) !default;
+$color-on-secondary: hsl(215, 24%, 9.8%) !default;
 
-$base-color-tokens: ("primary", "secondary", "background");
+$base-color-tokens: ("background-primary", "background-secondary", "primary", "secondary");
 
 $color-tokens: (
+  "color-background-primary": $color-background-primary,
+  "color-on-background-primary": $color-on-background-primary,
+  "color-background-secondary": $color-background-secondary,
+  "color-on-background-secondary": $color-on-background-secondary,
   "color-primary": $color-primary,
   "color-on-primary": $color-on-primary,
   "color-secondary": $color-secondary,
-  "color-on-secondary": $color-on-secondary,
-  "color-background": $color-background,
-  "color-on-background": $color-on-background
+  "color-on-secondary": $color-on-secondary
 ) !default;
 
 @mixin color-tokens() {
+  --color-background-primary: #{$color-background-primary};
+  --color-on-background-primary: #{$color-on-background-primary};
+  --color-background-secondary: #{$color-background-secondary};
+  --color-on-background-secondary: #{$color-on-background-secondary};
   --color-primary: #{$color-primary};
   --color-on-primary: #{$color-on-primary};
   --color-secondary: #{$color-secondary};
   --color-on-secondary: #{$color-on-secondary};
-  --color-background: #{$color-background};
-  --color-on-background: #{$color-on-background};
 }
