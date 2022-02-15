@@ -3,22 +3,22 @@
   Modify colors in src/_data/colors.js
  */
 
-$color-background-primary: hsl(0, 0%, 100%) !default;
-$color-on-background-primary: rgb(118, 118, 118) !default;
-$color-background-secondary: hsl(0, 0%, 97%) !default;
-$color-on-background-secondary: hsl(218, 23%, 23%) !default;
+$color-background: hsl(0, 0%, 100%) !default;
+$color-on-background: rgb(118, 118, 118) !default;
+$color-background-body: hsl(0, 0%, 97%) !default;
+$color-on-background-body: hsl(218, 23%, 23%) !default;
 $color-primary: hsl(229, 76%, 66%) !default;
 $color-on-primary: hsl(228, 61.8%, 17.5%) !default;
 $color-secondary: hsl(216, 15%, 52%) !default;
 $color-on-secondary: hsl(215, 24%, 9.8%) !default;
 
-$base-color-tokens: ("background-primary", "background-secondary", "primary", "secondary");
+$base-color-tokens: ("background", "background-body", "primary", "secondary");
 
 $color-tokens: (
-  "color-background-primary": $color-background-primary,
-  "color-on-background-primary": $color-on-background-primary,
-  "color-background-secondary": $color-background-secondary,
-  "color-on-background-secondary": $color-on-background-secondary,
+  "color-background": $color-background,
+  "color-on-background": $color-on-background,
+  "color-background-body": $color-background-body,
+  "color-on-background-body": $color-on-background-body,
   "color-primary": $color-primary,
   "color-on-primary": $color-on-primary,
   "color-secondary": $color-secondary,
@@ -26,10 +26,10 @@ $color-tokens: (
 ) !default;
 
 @mixin color-tokens() {
-  --color-background-primary: #{$color-background-primary};
-  --color-on-background-primary: #{$color-on-background-primary};
-  --color-background-secondary: #{$color-background-secondary};
-  --color-on-background-secondary: #{$color-on-background-secondary};
+  --color-background: #{$color-background};
+  --color-on-background: #{$color-on-background};
+  --color-background-body: #{$color-background-body};
+  --color-on-background-body: #{$color-on-background-body};
   --color-primary: #{$color-primary};
   --color-on-primary: #{$color-on-primary};
   --color-secondary: #{$color-secondary};

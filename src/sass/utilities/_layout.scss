@@ -2,6 +2,19 @@
   width: min(var(--container-width, 80ch), 100vw - 3rem);
   margin-right: auto;
   margin-left: auto;
+
+  &__fluid {
+    width: min(var(--container-width, 120ch), 100vw - 3rem);
+  }
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 section,
@@ -44,7 +57,7 @@ section,
 
   nav {
     grid-area: nav;
-    background-color: var(--color-background-primary);
+    background-color: var(--background);
   }
 
   main {

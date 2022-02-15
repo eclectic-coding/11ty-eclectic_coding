@@ -142,3 +142,10 @@ $content-spacer: 1em !default;
     border-color: var(--color-primary);
   }
 }
+
+.section__header {
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+  border-left: 4px solid var(--grey-light);
+  color: black;
+}
