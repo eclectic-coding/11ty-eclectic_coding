@@ -1,14 +1,14 @@
 a:not([class]) {
   color: var(--color-links);
 }
-
+// stylelint-disable
 a,
 button,
 input,
 textarea {
   --outline-size: max(2px, 0.08em);
   --outline-style: solid;
-  --outline-color: currentColor;
+  --outline-color: currentcolor;
 
   &:focus {
     outline: var(--outline-size) var(--outline-style) var(--outline-color);
@@ -25,3 +25,4 @@ textarea {
   }
 
 }
+// stylelint-enable

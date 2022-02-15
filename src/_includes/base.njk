@@ -6,12 +6,17 @@
     <title>{{ title }} | Eclectic Coding</title>
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
   </head>
-  <body>
-    <header>
-      <h1>{{ title }}</h1>
-    </header>
+  <body class="site-layout">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="navbar__container">
+        <h1 class="logo">EclecticCoding</h1>
+      </div>
+    </nav>
     <main class="container content">
       {{ content | safe }}
     </main>
+    <footer>
+      footer
+    </footer>
   </body>
 </html>

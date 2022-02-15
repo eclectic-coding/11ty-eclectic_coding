@@ -16,6 +16,7 @@ module.exports = function (eleventyConfig) {
 
   // Pass through copies
   eleventyConfig.addPassthroughCopy("./src/images")
+  eleventyConfig.addPassthroughCopy("./src/fonts")
 
   // Filters Section
   eleventyConfig.addFilter("readableDate", (dateObj) => {

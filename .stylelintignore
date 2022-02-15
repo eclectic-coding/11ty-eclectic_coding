@@ -1,0 +1,4 @@
+/public/css/*
+/src/sass/_prism.scss
+/src/sass/_color-tokens.scss
+/src/sass/global/_reset.scss

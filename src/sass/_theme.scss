@@ -4,17 +4,17 @@ $color-links: "var(--color-primary)" !default;
 $color-grey-hue: $color-primary !default;
 $color-background-body: $color-background-secondary !default;
 $color-grey-hue: hue($color-grey-hue);
-
-$font-family: "Noto Sans JP", sans-serif !default;
+$font-family: 'Baloo 2' !default;
 $font-weight-bold: 700 !default;
 
 :root {
-  @include color-tokens();
+  @include color-tokens;
 
   --color-links: #{$color-links};
   --grey-medium: hsl(#{$color-grey-hue}, 15%, 50%);
   --grey-light: hsl(#{$color-grey-hue}, 20%, 85%);
   --background-body: #{$color-background-body};
+  --font-family: #{$font-family};
   --font-weight-bold: #{$font-weight-bold};
   --article-card-body: var(--color-background-primary);
 }
@@ -23,4 +23,6 @@ body {
   background-color: var(--background-body);
   color: var(--color-on-background-primary);
   font-family: $font-family;
+  font-size: 1rem;
+  caret-color: transparent;
 }

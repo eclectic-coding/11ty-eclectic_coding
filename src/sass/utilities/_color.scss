@@ -21,7 +21,7 @@ $greys: "medium", "light" !default;
   .background-grey-#{$shade} {
     background-color: var(--grey-#{$shade});
 
-    @if ($shade == "medium") {
+    @if  $shade == "medium" {
       color: #fff;
     }
   }

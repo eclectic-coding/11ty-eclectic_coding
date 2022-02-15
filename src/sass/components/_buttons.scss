@@ -50,12 +50,13 @@ $button-colors: "error", "text" !default;
     }
   }
 
-
+  // stylelint-disable
   &:focus {
     box-shadow: 0 0 0 max(0.15em, 2px)
     var(--button-focus-inner, var(--button-color)),
     0 0 0 max(0.3em, 2px) var(--button-focus-outer, var(--button-background));
   }
+  // stylelint-enable
 
   @each $color in $button-colors {
     &--#{$color} {

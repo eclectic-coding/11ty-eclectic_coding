@@ -8,10 +8,6 @@ img[width] {
   max-height: var(--image-max-height);
   object-fit: cover;
 
-  //@supports not (aspect-ratio: 1) {
-  //  height: var(--ratio-unsupported-height) !important;
-  //}
-
   &--fullwidth {
     width: 100%;
   }

@@ -10,7 +10,7 @@ section,
   margin-bottom: 8vh;
 }
 
-.section--padded {
+.section-padded {
   padding-top: 8vh;
   padding-bottom: 8vh;
 }
@@ -32,4 +32,30 @@ section,
   overflow: hidden;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
+}
+
+.site-layout {
+  display: grid;
+  grid-template-areas:
+          "nav"
+          "main"
+          "footer";
+  grid-auto-rows: auto 1fr auto;
+
+  nav {
+    grid-area: nav;
+    background-color: var(--color-background-primary);
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  footer {
+    grid-area: footer;
+  }
 }

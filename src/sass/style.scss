@@ -1,6 +1,4 @@
 @use "theme";
-@use "reset";
- //@use "global" with ($type-scale: "goldenRatio");
 @use "global";
 @use "components" with ($form-border-color: hsl(0, 0%, 50%));
 @use "prism";

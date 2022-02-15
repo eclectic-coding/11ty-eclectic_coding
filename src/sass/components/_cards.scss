@@ -1,5 +1,4 @@
 $card-gutter: "1.5rem" !default;
-
 $card-gutter-var: "var(--card-gutter, #{$card-gutter})";
 
 .card {
@@ -10,7 +9,7 @@ $card-gutter-var: "var(--card-gutter, #{$card-gutter})";
   gap: var(--card-gap, 1rem);
   border-radius: var(--card-radius, 0.25rem);
   background-color: var(--card-background, #fff);
-  box-shadow: 0 0.25rem 0.45rem -0.15rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.25rem 0.45rem -0.15rem hsla(0, 0%, 0%, 0.5);
 
   // stylelint-disable-next-line
   > :is(*, #override):not(:first-child) {
@@ -39,11 +38,9 @@ $card-gutter-var: "var(--card-gutter, #{$card-gutter})";
       top: 0;
       right: 0;
       bottom: 0;
-      left: 0;
-      // Soon when logical properties are supported - inset: 0;
+      left: 0; // Soon when logical properties are supported - inset: 0;
     }
   }
-
 
   > *:not(img) {
     margin-right: #{$card-gutter-var};
@@ -66,6 +63,7 @@ $card-gutter-var: "var(--card-gutter, #{$card-gutter})";
     border-radius: 0 0 var(--card-radius, 0.25rem) var(--card-radius, 0.25rem);
   }
 
+  // stylelint-disable-next-line
   > :is(.button, ul, a, #override):last-child {
     margin-top: auto;
   }
