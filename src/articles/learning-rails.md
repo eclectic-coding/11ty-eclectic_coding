@@ -4,7 +4,7 @@ date: 2021-03-09
 published: true 
 categories: ['rails', 'ruby', 'tutorial']
 series: false 
-cover_image: ./images/rails.jpg
+cover_image: /images/rails.jpg
 description: Have you ever wanted to set up SSL for localhost development on your computer? No? Honestly, as hard as this can be at times, me neither. What changed? Recently, 
 ---
 So, I decided to write this article to share a few resources I have used over the last twenty months of learning Ruby and Ruby on Rails in the hopes it may help others. Also, I am writing to share a little of my story.

@@ -1,4 +1,3 @@
-const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
@@ -18,16 +17,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/images")
   eleventyConfig.addPassthroughCopy("./src/fonts")
 
-  // Filters Section
-  eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
-    );
-  });
-
   eleventyConfig.addFilter("excerpt", (post) => {
     const content = post.replace(/(<([^>]+)>)/gi, "");
-    return content.substr(0, content.lastIndexOf(" ", 280)) + " ...";
+    return content.substr(0, content.lastIndexOf(" ", 150)) + " ...";
   });
 
   return {
