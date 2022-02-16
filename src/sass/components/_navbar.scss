@@ -1,5 +1,6 @@
 .navbar {
   padding: 2em 0;
+  background-color: var(--background);
 
   &__container {
     display: flex;
@@ -16,3 +17,28 @@
     font-style: bold;
   }
 }
+
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .pagination__item {
+    background-color: var(--background);
+    color: var(--color-primary);
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.25rem 0.45rem -0.15rem hsla(0, 0%, 0%, 0.1);
+
+    &--disabled {
+      background-color: var(--background);
+      color: var(--grey-medium);
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      box-shadow: 0 0.25rem 0.45rem -0.15rem hsla(0, 0%, 0%, 0.1);
+      cursor: not-allowed;
+    }
+  }
+}
+

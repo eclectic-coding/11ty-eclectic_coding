@@ -10,7 +10,7 @@ module.exports = [
   },
   {
     name: 'primary',
-    color: 'hsl(229, 76%, 66%)'
+    color: 'hsl(250,78%,63%)'
   },
   {
     name: 'secondary',

@@ -7,7 +7,7 @@ title: Color Token Contrast
 ## color-background
   - `color-on-background`
   - `color-on-background-body`
-  - `color-on-primary`
+  - `color-primary`
   - `color-on-secondary`
 
 ## color-on-background
@@ -15,19 +15,23 @@ title: Color Token Contrast
 
 ## color-background-body
   - `color-on-background-body`
-  - `color-on-primary`
+  - `color-primary`
   - `color-on-secondary`
 
 ## color-on-background-body
   - `color-background`
   - `color-background-body`
+  - `color-on-primary`
 
 ## color-primary
-  - `color-on-secondary`
-
-## color-on-primary
   - `color-background`
   - `color-background-body`
+  - `color-on-primary`
+
+## color-on-primary
+  - `color-on-background-body`
+  - `color-primary`
+  - `color-on-secondary`
 
 ## color-secondary
   - `color-on-secondary`
@@ -35,5 +39,5 @@ title: Color Token Contrast
 ## color-on-secondary
   - `color-background`
   - `color-background-body`
-  - `color-primary`
+  - `color-on-primary`
   - `color-secondary`

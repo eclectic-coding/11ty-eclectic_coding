@@ -23,7 +23,7 @@ pagination:
     {%- if pagination.previousPageLink -%}
       <a class="pagination__item" href="{{ pagination.previousPageHref | url }}">Newer Articles</a>
     {%- else -%}
-      <span class="pagination__item">Previous</span>
+      <span class="pagination__item--disabled">Previous</span>
     {%- endif -%}
 
     {%- if pagination.nextPageLink -%}

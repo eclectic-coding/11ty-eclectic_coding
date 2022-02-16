@@ -5,3 +5,22 @@ footer {
   padding: 1rem 0;
   background-color: var(--background);
 }
+
+.social--icons {
+  display: flex;
+
+  img {
+    margin: 0 0.5rem;
+  }
+}
+
+.copyright {
+  a {
+    color: var(--accent);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

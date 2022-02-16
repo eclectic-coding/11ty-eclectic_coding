@@ -12,6 +12,13 @@
   text-align: center;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 1rem;
+}
+
 .mx-auto {
   margin-right: auto;
   margin-left: auto;
@@ -57,7 +64,6 @@ section,
 
   nav {
     grid-area: nav;
-    background-color: var(--background);
   }
 
   main {

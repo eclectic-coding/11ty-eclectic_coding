@@ -1,5 +1,10 @@
 a:not([class]) {
-  color: var(--color-links);
+  color: var(--color-primary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 // stylelint-disable
 a,
