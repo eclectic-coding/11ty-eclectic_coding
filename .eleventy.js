@@ -22,11 +22,6 @@ module.exports = function (eleventyConfig) {
     return content.substr(0, content.lastIndexOf(" ", 150)) + " ...";
   });
 
-  eleventyConfig.addFilter("optionalImage", (post) => {
-    const image = post.data.cover_image
-    return image !== '' ? "/images/rails.jpg" : image
-  });
-
   return {
     dir: {
       passthroughFileCopy: true,
