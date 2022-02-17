@@ -4,7 +4,7 @@ date: 2021-03-03
 published: true
 categories: ['rails', 'ruby', 'webdev']
 series: false
-cover_image: ./images/rubys.jpg
+cover_image: /images/rubys.jpg
 canonical_rul: false
 description: I have been working on a n
 ---

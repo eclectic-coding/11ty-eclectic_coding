@@ -4,7 +4,7 @@ date: 2020-07-19
 published: true
 categories: ['node', 'webdev', 'javascript']
 series: false
-cover_image: ./images/technology.jpg
+cover_image: /images/technology.jpg
 canonical_rul: false
 description: I am learning how much I love back-end architectures. This week I decided to through away the tutorials and code my first Node Express server. After reviewing a lot of code samples I started to notice something around one middleware package. The way that Body-parser is including in a project can be subjective.
 ---

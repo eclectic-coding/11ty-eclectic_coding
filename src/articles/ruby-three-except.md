@@ -4,7 +4,7 @@ date: 2020-10-04
 published: true
 categories: ['ruby', 'webdev']
 series: false
-cover_image: ./images/ruby-gems.jpg
+cover_image: /images/ruby-gems.jpg
 canonical_rul: false
 description: After the last four or five years of the promises of a new major version of Ruby (Ruby 3), it looks like this new version is set to release on December 25, 2020. This article will look at one new feature.
 ---

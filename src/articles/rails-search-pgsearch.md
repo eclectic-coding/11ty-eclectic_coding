@@ -4,7 +4,7 @@ date: 2020-10-18
 published: true
 categories: ['rails', 'postgres','tutorials']
 series: false
-cover_image: ./images/rails-search.jpg
+cover_image: /images/rails-search.jpg
 canonical_rul: false
 description: A search bar is an especial feature as a web application grows. There are several ways to implement this feature in a Rails application. This article will explore one of these, by searching a Postgres database with the `pg_search` gem.
 ---

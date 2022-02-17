@@ -15,7 +15,11 @@ pagination:
     <article class="article-card">
       <div class="article-card__content">
         <div class="article-card__banner">
-          <img src="{{ article.data.cover_image }}" alt="" class="article-card__img">
+          {%- if article.data.cover_image -%}
+            <img src="{{ article.data.cover_image }}" alt="" class="article-card__img">
+          {%- else -%}
+            <img src="/images/rails.jpg" alt="" class="article-card__img">
+          {%- endif -%}
         </div>
         <div>
           {%- for category in article.data.categories -%}

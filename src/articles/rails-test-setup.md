@@ -4,7 +4,7 @@ date: 2020-08-23
 published: true
 categories: ['rails', 'testing', 'ruby']
 series: false
-cover_image: ./images/rails-testing.jpg
+cover_image: /images/rails-testing.jpg
 canonical_rul: false
 description: How do you setup a Rails project for testing? In this article we will explore what a testing suite, using RSpec and other tools, for a robust developers experience.
 ---

@@ -4,7 +4,7 @@ date: 2019-07-22
 published: true
 categories: ['Gatsby', 'React', 'Commandline']
 series: false
-cover_image: ./images/blocked.jpg
+cover_image: /images/blocked.jpg
 canonical_url: false
 description: Have you tried to start a development server and the port is blocked? This post offers a dynamic shell script to fix this problem quickly.
 ---

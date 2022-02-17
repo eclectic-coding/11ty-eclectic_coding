@@ -4,7 +4,7 @@ date: 2020-09-20
 published: true
 categories: ['rails', 'ruby', 'webdev']
 series: false
-cover_image: ./images/avatar.jpg
+cover_image: /images/avatar.jpg
 canonical_rul: false
 description: In the previous article in this series, we learned about Active Storage. We set up an interface to allow a user to add an Avatar to their user profile. Part Two of this two part series, we extend this feature to use, as a fallback image, the Gravatar service.
 ---

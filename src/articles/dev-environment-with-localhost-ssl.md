@@ -4,7 +4,7 @@ date: 2021-02-02
 published: true 
 categories: ['rails', 'security', 'tutorial']
 series: false 
-cover_image: ./images/security-ssl.jpg 
+cover_image: /images/security-ssl.jpg 
 canonical_rul: false 
 description: Have you ever wanted to set up SSL for localhost development on your computer? No? Honestly, as hard as this can be at times, me neither. What changed? Recently, I have been working on a Rails contract project, and the project was set up using SSL. I needed to set up SSL on my Linux computer, so I could collaborate on the project.
 ---

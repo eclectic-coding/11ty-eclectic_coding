@@ -4,7 +4,7 @@ date: 2021-01-13
 published: true 
 categories: ['rails', 'ruby', 'tutorial','webdev']
 series: Streamlined Workflow
-cover_image: ./images/rails.jpg
+cover_image: /images/rails.jpg
 canonical_rul: false 
 description: There is no need for developers to walking the same path, performing the same tasks at the beginning of any project, over and over again. That is what this series of articles has been about, streamlining our workflow.
 ---

@@ -4,7 +4,7 @@ date: 2020-08-30
 published: true
 categories: ['rails', 'testing', 'ruby']
 series: false
-cover_image: ./images/rails.jpg
+cover_image: /images/rails.jpg
 canonical_rul: false
 description: So I am always looking for ways to increase my skills on the Ruby on Rails platform. As I look for first professional dev job, afters years as a hobbyist, I have to say, Rails would be by dream job.
 ---

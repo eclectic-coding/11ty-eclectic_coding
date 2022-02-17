@@ -4,7 +4,7 @@ date: 2020-05-12
 published: true
 categories: ['react', 'javascript', 'beginners', 'tutorial']
 series: Streamlined Workflow
-cover_image: ./images/quality.jpg
+cover_image: /images/quality.jpg
 canonical_rul: false
 description: Welcome to week three in this article series, "Streamlined Workflow." In this week's article we will continue to build out a Boilerplate configuration for React. Last week we built out a working boilerplate but without much functionality. This week we will look at code quality, deployment enhancements, and styling.
 ---

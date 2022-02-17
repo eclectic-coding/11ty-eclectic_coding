@@ -2,7 +2,7 @@
 title: Passionate Journey
 date: 2020-04-11
 published: true
-cover_image: ./images/passion-led-us-here.jpg
+cover_image: /images/passion-led-us-here.jpg
 categories: ['webdev','Coding']
 series: false
 description: This is an article which I share my journey in web technology, specifically my passion to learn. As I am at home during the COVID-19 pandemic, it seems relevant to share.

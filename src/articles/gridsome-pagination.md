@@ -4,7 +4,7 @@ date: 2020-04-09
 published: true
 categories: ['Gridsome', 'Coding']
 series: false
-cover_image: ./images/pagination.jpg
+cover_image: /images/pagination.jpg
 canonical_rule: false
 description: When ever I set up a blog, there are a few features which are must haves, linkable taxonomy (i.e. tags or categories) and pagination. No one wants an eternal page. These tasks can be challenging but it is super easy in Gridsome.
 ---

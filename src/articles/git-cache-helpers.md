@@ -4,7 +4,7 @@ date: 2019-12-09
 published: true
 categories: ['GIT', 'Security']
 series: 'GIT Authentication'
-cover_image: ./images/git-security.jpg
+cover_image: /images/git-security.jpg
 canonical_url: false
 description: This is a second article in a series called "Git Authentication*" . In the previous article, I shared how I troubleshooted an authentication error, while working on lab assignments for Flatiron School.
 ---

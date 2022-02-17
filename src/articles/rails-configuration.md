@@ -4,7 +4,7 @@ date: 2020-04-08
 published: true
 categories: ['Ruby', 'Rails', 'TIL']
 series: false
-cover_image: ./images/rails-configuration.jpg
+cover_image: /images/rails-configuration.jpg
 canonical_url: false
 description: Learn about my journey, learning how to set up a configuration file to streamline creating new Rails project.
 ---

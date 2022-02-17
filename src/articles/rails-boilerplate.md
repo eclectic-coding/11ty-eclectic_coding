@@ -4,7 +4,7 @@ date: 2020-07-07
 published: true
 categories: ['rails', 'ruby', 'webdev', 'tutorials']
 series: Streamlined Workflow
-cover_image: ./images/rails.jpg
+cover_image: /images/rails.jpg
 canonical_rul: false
 description: So far in this series, we have looked at the benefits of using a Boilerplate to streamline your workflow, and a two articles on how to set up a React Boilerplate with Parcel instead of Webpack, and a traditional means to compile and bundle a traditional HTML/SCSS project using Parcel. So, what about Rails?
 ---

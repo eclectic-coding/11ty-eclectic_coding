@@ -4,7 +4,7 @@ date: 2020-08-14
 published: true
 categories: ['rails', 'webdev', 'ruby']
 series: false
-cover_image: ./images/rails.jpg
+cover_image: /images/rails.jpg
 canonical_rul: false
 description: As any one journeys through any profession, one thing holds true. Hopefully, the longer you work at it, the better your skills will develop, at least that should be the goal. As we look back at our code from months ago, we should see a progression of maturity.
 ---

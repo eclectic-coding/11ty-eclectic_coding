@@ -4,7 +4,7 @@ date: 2020-07-05
 published: true
 categories: ['webdev', 'tutorial']
 series: false
-cover_image: ./images/learn-library.jpg
+cover_image: /images/learn-library.jpg
 canonical_rul: false
 description: When was the last time you had the desire to learn a new programming language? It can at first seem like a daunting task. However, it can be easier than you think. In this article we will look at a a commonality found in programming languages and allow us to think differently about undertaking a new learning path.
 ---

@@ -4,7 +4,7 @@ date: 2020-05-23
 published: true
 categories: ['rails', 'tailwindcss', 'webdev']
 series: false
-cover_image: ./images/styling.png
+cover_image: /images/styling.png
 canonical_rul: false
 description: Adding pagination to any web site can be a challenge. Luckily, there are a few ways to accomplish this is Rails. This article will add pagination to a simple post and then we will configure Tailwind for styling to pagination block.
 ---

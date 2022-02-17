@@ -4,7 +4,7 @@ date: 2020-09-06
 published: true
 categories: ['rails', 'ruby', 'webdev']
 series: false
-cover_image: ./images/rails-dry.jpg
+cover_image: /images/rails-dry.jpg
 canonical_rul: false
 description: In any programming language, it is important to create DRY (Don't Repeat Yourself) code. In this article we will explore three methods of writing Rails CRUD controllers, and use a gem to abstract controllers even more.
 ---

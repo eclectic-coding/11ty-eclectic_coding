@@ -4,7 +4,7 @@ date: 2020-07-21
 published: true
 categories: ['vuejs', 'forms', 'webdev']
 series: false
-cover_image: ./images/login-form.png
+cover_image: /images/login-form.png
 canonical_rul: false
 description: Recently I have been learning Express and this app I have been working on will eventually be a Survey App, a more full featured version of the I did as part of Flatiron. This app utilizes MongoDB, Express, and a Vue.js frontend. I recently finished the user accounts authentication on the backend with JWT, and added the registration and login forms, routing, and logic to the frontend.
 ---

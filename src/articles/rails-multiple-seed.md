@@ -4,7 +4,7 @@ date: 2020-10-11
 published: true
 categories: ['rails', 'database', 'webdev']
 series: false
-cover_image: ./images/rails-seeds.jpg
+cover_image: /images/rails-seeds.jpg
 canonical_rul: false
 description: If you have a larger Rails project, or a project with many resources, managing one database seed file can get out of hand. In the name of DRY-ing out code, this article walks you through how to abstract your seed data into multiple files.
 ---

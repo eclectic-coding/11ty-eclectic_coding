@@ -4,7 +4,7 @@ date: 2020-08-01
 published: true
 categories: ['webdev', 'git']
 series: Streamlined Workflow
-cover_image: ./images/git-shortcut.jpg
+cover_image: /images/git-shortcut.jpg
 canonical_rul: false
 description: Continuing this article series about Streamlining Workflow, must include a way to streamline our git commands. This article uses my own aliases and a GIST below for the full list.
 ---

@@ -4,7 +4,7 @@ date: 2020-06-06
 published: true
 categories: ['React', 'Bulma', 'webdev', 'beginner']
 series: false
-cover_image: ./images/navigation.jpg
+cover_image: /images/navigation.jpg
 canonical_rul: false
 description: When starting a new project, the styling we use is often one of the first considerations. I generally prefer to code my own SCSS, but often there in not time, and I reach for a CSS framework of some kind. I tend to prefer the utility systems like Tailwind or Bulma.
 ---

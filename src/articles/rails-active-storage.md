@@ -4,7 +4,7 @@ date: 2020-09-13
 published: true
 categories: ['rails', 'ruby', 'webdev']
 series: false
-cover_image: ./images/active-storage.jpg
+cover_image: /images/active-storage.jpg
 canonical_rul: false
 description: On any web application, the ability to use images are tantamount. In  a Ruby on Rails project, using Active Storage increases the flexibility to use external storage services and to seamlessly create user interaction.
 ---

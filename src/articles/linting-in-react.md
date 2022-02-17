@@ -4,7 +4,7 @@ date: 2020-01-26
 published: true
 categories: ['React','Productivity','Eslint']
 series: true
-cover_image: ./images/organized.jpg
+cover_image: /images/organized.jpg
 description: Recently I started experimenting with the idea of code linting via ESLint and Prettier. This article covers the configuration of ESLint, Prettier, and Husky in a React project.
 ---
 Recently I started experimenting with the idea of code linting via ESLint and Prettier. I recently wrote another article on this subject concerning this Nuxtjs Blog - [Webstorm and Nuxtjs Linting](https://eclecticsaddlebag.com/posts/webstorm-nuxtjs-linting). So, enter the story of three tools:

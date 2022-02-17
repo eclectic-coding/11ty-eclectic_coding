@@ -4,7 +4,7 @@ date: 2020-01-07
 published: true
 categories: ['Webstorm','Nuxtjs','Eslint']
 series: false
-cover_image: ./images/webstorm-lint.jpg
+cover_image: /images/webstorm-lint.jpg
 canonical_url: false
 description: Recently I starting experimenting with Vue.js and Nuxt.js, partly out of curiosity and partly to learn a new framework, before I start a job search in a few months. This article is about my troubleshooting getting Nuxt.js, Linting, and Webstorm to play nicely together.
 ---
