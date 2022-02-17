@@ -8,14 +8,16 @@ module.exports = function (eleventyConfig) {
   // Watch targets
   eleventyConfig.addWatchTarget("./src/sass/");
   eleventyConfig.addWatchTarget("./src/images/");
+  eleventyConfig.addWatchTarget("./src/js/");
 
   eleventyConfig.setBrowserSyncConfig({
     open: true,
   });
 
   // Pass through copies
-  eleventyConfig.addPassthroughCopy("src/images")
   eleventyConfig.addPassthroughCopy("src/fonts")
+  eleventyConfig.addPassthroughCopy("src/images")
+  eleventyConfig.addPassthroughCopy("src/js")
 
   eleventyConfig.addFilter("excerpt", (post) => {
     const content = post.replace(/(<([^>]+)>)/gi, "");
