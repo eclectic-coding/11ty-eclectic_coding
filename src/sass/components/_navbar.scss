@@ -4,7 +4,7 @@
 
   &__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: min(var(--container-width, 100ch), 100vw - 3rem);
     margin-right: auto;
     margin-left: auto;
@@ -17,7 +17,29 @@
       h1 {
         margin-bottom: 0;
         font-size: 2rem;
-        font-style: bold;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__links {
+    display: flex;
+    gap: 1rem;
+
+    li a {
+      transition: 0.5s ease-out;
+      color: var(--color-on-background);
+      font-size: 1.15rem;
+      font-weight: bold;
+
+      &:hover {
+        color: var(--color-primary);
+        text-decoration: none;
       }
     }
   }

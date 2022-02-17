@@ -1,0 +1,19 @@
+.text-align-center {
+  text-align: center;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 1rem;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}

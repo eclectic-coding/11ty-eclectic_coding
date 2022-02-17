@@ -8,56 +8,6 @@
   }
 }
 
-.text-align-center {
-  text-align: center;
-}
-
-.text-decoration-none {
-  text-decoration: none;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0 1rem;
-}
-
-.mx-auto {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-section,
-.section {
-  margin-top: 8vh;
-  margin-bottom: 8vh;
-}
-
-.section-padded {
-  padding-top: 8vh;
-  padding-bottom: 8vh;
-}
-
-.layout-flex {
-  --gap: 2rem;
-  --wrap: wrap;
-
-  display: flex;
-  flex-wrap: var(--wrap);
-  gap: var(--gap);
-}
-
-.inclusively-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  white-space: nowrap;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-}
-
 .site-layout {
   display: grid;
   grid-template-areas:
