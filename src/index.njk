@@ -27,10 +27,12 @@ pagination:
             {{ category }}
           </button>
           {%- endfor -%}
-          <h2>{{ article.data.title }}</h2>
+          <h3>{{ article.data.title }}</h3>
           <p class="article-card__body">{{ article.templateContent | excerpt }}</p>
-          <div class="article-card__author">{{ meta.authorName }}</div>
-          <time datetime="{{ article.data.date }}">{{ article.data.date.toDateString() }}</time>
+          <div class="article-card__meta">
+            <div class="article-card__author">{{ meta.authorName }}</div>
+            <time datetime="{{ article.data.date }}">{{ article.data.date.toDateString() }}</time>
+          </div>
         </div>
       </div>
     </article>
