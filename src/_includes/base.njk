@@ -14,14 +14,9 @@
         <a href="/" class="navbar__container--logo">
           <h1>EclecticCoding</h1>
         </a>
-        <div class="navbar__nav-wrapper">
-          <ul class="navbar__links" role="list">
-            <li role="listitem"><a href="/">Home</a></li>
-            <li role="listitem"><a href="#">Articles</a></li>
-            <li role="listitem"><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="mobile-nav">
+
+        <!-- btn-group -->
+        <div class="navbar__container__btn-group">
           <!-- Add dark mode toggle selector -->
           <div id="mobile-nav-container">
             <div class="mobile-nav__btn active">
@@ -34,14 +29,38 @@
               </button>
             </div>
           </div>
+        </div>
+
+        <!-- Start desktop menu -->
+        <div class="navbar__nav-wrapper">
+          <ul class="navbar__links" role="list">
+            <li role="listitem"><a href="/">Home</a></li>
+            <li role="listitem"><a href="#">Articles</a></li>
+            <li role="listitem"><a href="#">Contact</a></li>
+          </ul>
+
+          <!-- add dark mode toggle -->
+        </div>
+
+        <!-- Start mobile menu -->
+        <div class="mobile-nav">
+
+          <!-- Close menu button -->
+          <button id="mobile-menu" class="mobile-nav__btn-close" aria-label="Close menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+                 viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+              <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+
+          <!-- mobile menu -->
           <div class="mobile-nav__menu">
-            <div class="wrapper">
-              <ul class="wrapper__links" role="list">
-                <li role="listitem"><a href="/">Home</a></li>
-                <li role="listitem"><a href="#">Articles</a></li>
-                <li role="listitem"><a href="#">Contact</a></li>
-              </ul>
-            </div>
+            <ul class="wrapper__links" role="list">
+              <li role="listitem"><a href="/">Home</a></li>
+              <li role="listitem"><a href="#">Articles</a></li>
+              <li role="listitem"><a href="#">Contact</a></li>
+            </ul>
           </div>
         </div>
       </div>

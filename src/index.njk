@@ -23,7 +23,7 @@ pagination:
         </div>
         <div>
           {%- for category in article.data.categories -%}
-          <button class="article-card__tags">
+          <button class="article-card__tags" aria-label="Articles from the {{ category }} category">
             {{ category }}
           </button>
           {%- endfor -%}
