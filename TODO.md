@@ -4,9 +4,20 @@ starting 2/18/2022
 
 Menubar
 - [x] Finish Mobile menu
-- [ ] Add social media svg's to mobile menu
+- [ ] Add social media svgs to mobile menu
 - [ ] Add schedule call after Side bar is finished
 - [ ] Dark mode toggle
+
+Articles
+- [ ] Add Articles feed page and pagination
+- [ ] Add article card animation effect
+- [ ] Add button for more articles on home page
+
+SEO
+- [ ] Site Meta data
+- [ ] Social cards
+- [ ] Favicon
+- [ ] Article SEO
 
 Collections
 - [ ] Categories
@@ -22,18 +33,8 @@ Home Page
 - [ ] Design Hero section
 - [ ] Reduce the latest blog section to three articles with no pagination
 
-Articles
-- [ ] Add Articles feed page and pagination
-- [ ] Add button for more articles on home page
-
 Contact
 - [ ] Decide on contact form page 
 
 Projects
 - [ ] Add projects feature
-
-SEO
-- [ ] Site Meta data
-- [ ] Social cards 
-- [ ] Favicon
-- [ ] Article SEO
