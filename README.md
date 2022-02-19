@@ -1,4 +1,2 @@
-
-
 # Eclectic Coding
 

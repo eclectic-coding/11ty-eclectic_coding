@@ -3,7 +3,7 @@
 starting 2/18/2022
 
 Menubar
-- [ ] Finish Mobile menu
+- [x] Finish Mobile menu
 - [ ] Add social media svg's to mobile menu
 - [ ] Add schedule call after Side bar is finished
 - [ ] Dark mode toggle
