@@ -5,69 +5,66 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="eleventy">
     <title>{{ pageTitle }}</title>
+    <link rel="icon" href="{{ '/favicon.png' | url }}" />
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
   </head>
   <body class="site-layout">
+
     <nav class="navbar" role="navigation" aria-label="Main Navigation">
       <div class="navbar__container">
         <a href="/" class="navbar__container--logo">
-          <h1>EclecticCoding</h1>
+          <div>EclecticCoding</div>
         </a>
 
-        <!-- btn-group -->
-        <div class="navbar__container__btn-group">
-          <!-- Add dark mode toggle selector -->
-          <div id="mobile-nav-container">
-            <div class="mobile-nav__btn active">
-              <button id="mobile-menu" class="mobile-nav__btn" aria-label="Menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"
-                     focusable="false" aria-hidden="true">
-                  <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                </svg>
-              </button>
-            </div>
-          </div>
+        <div class="navbar__btn-group">
+          <!-- dark mode controls -->
+          <button id="mobile-menu-btn" class="navbar__menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
         </div>
 
-        <!-- Start desktop menu -->
-        <div class="navbar__nav-wrapper">
-          <ul class="navbar__links" role="list">
-            <li role="listitem"><a href="/">Home</a></li>
-            <li role="listitem"><a href="#">Articles</a></li>
-            <li role="listitem"><a href="#">Contact</a></li>
+        <div class="navbar__desktop--wrapper">
+          <ul role="list" class="navbar__links">
+            <li role="listitem"><a href="/" class="nav-link">Home</a></li>
+            <li role="listitem"><a href="#" class="nav-link">About Me</a></li>
+            <li role="listitem"><a href="#" class="nav-link">Contact</a></li>
           </ul>
-
-          <!-- add dark mode toggle -->
+          <!-- start dark mode controls -->
+          <!-- end dark mode controls -->
         </div>
 
-        <!-- Start mobile menu -->
-        <div class="mobile-nav">
-
-          <!-- Close menu button -->
-          <button id="mobile-menu" class="mobile-nav__btn-close" aria-label="Close menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
-                 viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+        <div id="mobile-menu" class="navbar__mobile">
+          <button class="navbar__mobile--close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
               <path
                   d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
             </svg>
           </button>
 
-          <!-- mobile menu -->
-          <div class="mobile-nav__menu">
-            <ul class="wrapper__links" role="list">
-              <li role="listitem"><a href="/">Home</a></li>
-              <li role="listitem"><a href="#">Articles</a></li>
-              <li role="listitem"><a href="#">Contact</a></li>
-            </ul>
+          <div class="navbar__mobile--wrapper">
+            <div class="navbar__mobile--menu">
+              <ul role="list" class="">
+                <li role="listitem" class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li role="listitem" class="nav-item"><a href="#" class="nav-link">About Me</a></li>
+                <li role="listitem" class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+              </ul>
+            </div>
           </div>
+
         </div>
-      </div>
+
     </nav>
+
+
     <main class="container content">
       {{ content | safe }}
     </main>
+
     <footer>
       <div class="row container__fluid text-align-center mx-auto">
         <p>

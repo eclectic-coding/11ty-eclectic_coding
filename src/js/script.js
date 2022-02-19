@@ -1,21 +1,11 @@
-const mobile = document.querySelector('.mobile-nav__menu');
-const navMenuBtn = document.getElementById('mobile-menu');
-const navMenuContainer = document.getElementById('mobile-nav-container');
+const navMenuBtn = document.getElementById('mobile-menu-btn');
+const navMenuContainer = document.getElementById('mobile-menu');
 
+console.log(navMenuBtn);
 const navToggleFunc = function () {
-  mobile.classList.toggle('active');
-  navMenuContainer.style.display = 'none';
-};
+  navMenuContainer.classList.toggle('active');
+}
 
 // Toggle menu
 navMenuBtn.addEventListener('click', navToggleFunc);
-
-// Close menu by clicking canvas
-mobile.addEventListener('click', function () {
-    mobile.classList.remove('active');
-    navMenuContainer.style.display = 'flex';
-  }
-);
-
-// Close menu with menu close button
-
+navMenuContainer.addEventListener('click', navToggleFunc);

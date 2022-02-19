@@ -4,7 +4,7 @@
 
 Featuring absolutely nothing beyond a base HTML5 template and the essential setup to watch and compile your Sass alongside 11ty.
 
-Includes minifiying and autoprefixing of styles `postbuild`.
+Includes minifying and autoprefixing of styles `postbuild`.
 
 <small>Created by [@5t3ph](https://twitter.com/5t3ph)</small>
 
