@@ -1,5 +1,5 @@
 {
-  "name": "11ty-sass-skeleton",
+  "name": "eclectic-coding",
   "version": "1.2.0",
   "description": "",
   "main": "index.html",
@@ -17,9 +17,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/5t3ph/11ty-sass-skeleton.git"
+    "url": "git+https://github.com/eclectic-coding/11ty-eclectic_coding.git"
   },
-  "author": "5t3ph",
+  "author": "eclectic-coding",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
