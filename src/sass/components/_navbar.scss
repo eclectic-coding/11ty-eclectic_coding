@@ -43,14 +43,15 @@
     cursor: pointer;
     box-shadow: 0 0.25rem 0.45rem -0.15rem hsla(0, 0%, 0%, 0.1);
 
+    @media(max-width: 65ch) {
+      display: flex;
+    }
+
     &:hover {
       background: var(--color-primary);
       color: var(--color-on-primary);
     }
 
-    @media(max-width: 60ch) {
-      display: flex;
-    }
   }
 
   &__links {

@@ -30,9 +30,7 @@
 
         <div class="navbar__desktop--wrapper">
           <ul role="list" class="navbar__links">
-            <li role="listitem"><a href="/" class="nav-link">Home</a></li>
-            <li role="listitem"><a href="#" class="nav-link">About Me</a></li>
-            <li role="listitem"><a href="#" class="nav-link">Contact</a></li>
+            {% include "partials/_navlinks.html" %}
           </ul>
           <!-- start dark mode controls -->
           <!-- end dark mode controls -->
@@ -48,14 +46,13 @@
 
           <div class="navbar__mobile--wrapper">
             <div class="navbar__mobile--menu">
-              <ul role="list" class="">
-                <li role="listitem" class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li role="listitem" class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-                <li role="listitem" class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+              <ul role="list">
+                {% include "partials/_navlinks.html" %}
               </ul>
             </div>
           </div>
 
+        </div>
         </div>
 
     </nav>
@@ -65,28 +62,7 @@
       {{ content | safe }}
     </main>
 
-    <footer>
-      <div class="row container__fluid text-align-center mx-auto">
-        <p>
-          <a href="https://www.eclecticcoding.com">EclecticCoding.com</a>
-          &copy; 2022 <a href="mailto:me@eclecticcoding.com">Chuck Smith</a>
-        </p>
-        <span class="social--icons">
-          <a href="https://dev.to/eclecticcoding" aria-label="Dev profile">
-            <img src="/images/dev.svg" alt="Dev profile" width="24px" height="24px">
-          </a>
-          <a href="https://github.com/eclectic-coding/" aria-label="GitHib profile">
-            <img src="/images/github.svg" alt="GitHib profile" width="24px" height="24px">
-          </a>
-          <a href="https://www.linkedin.com/in/dev-chuck-smith/" aria-label="LinkedIn profile">
-            <img src="/images/linkedin.svg" alt="LinkedIn profile" width="24px" height="24px">
-          </a>
-          <a href="https://twitter.com/EclecticCoding" aria-label="Twitter profile">
-            <img src="/images/twitter.svg" alt="Twitter profile" width="24px" height="24px">
-          </a>
-        </span>
-      </div>
-    </footer>
+    {% include "partials/_footer.html" %}
 
     <script src="js/script.js"></script>
   </body>

@@ -1,40 +1,40 @@
 
-# TODO List 
+## TODO List 
 starting 2/18/2022
 
-Menubar
+### Menubar
 - [x] Finish Mobile menu
 - [ ] Add social media svgs to mobile menu
-- [ ] Add schedule call after Side bar is finished
+- [ ] Add Calendly link is finished
 - [ ] Dark mode toggle
 
-Articles
+### Articles
 - [ ] Add Articles feed page and pagination
 - [ ] Add article card animation effect
 - [ ] Add button for more articles on home page
 
-SEO
+### SEO
 - [ ] Site Meta data
 - [ ] Social cards
 - [ ] Favicon
 - [ ] Article SEO
 
-Collections
+### Collections
 - [ ] Categories
 - [ ] Build single category feed
 - [ ] Make category buttons clickable on article cards
 - [ ] Categories
 
-Sidebar
+### Sidebar
 - [ ] Add Side bar with tag cloud
 - [ ] Add download resume interface
 
-Home Page
+### Home Page
 - [ ] Design Hero section
 - [ ] Reduce the latest blog section to three articles with no pagination
 
-Contact
+### Contact
 - [ ] Decide on contact form page 
 
-Projects
+### Projects
 - [ ] Add projects feature
