@@ -8,7 +8,7 @@ pagination:
   reverse: true
 ---
 
-<h2 class="section__header">Latest Blog Posts</h2>
+<h1 class="h2 section__header">Latest Blog Posts</h1>
 
 {%- for article in articleList -%}
   <a href="{{ article.url }}" class="anchor-card">
@@ -16,7 +16,7 @@ pagination:
       <div class="article-card__content">
         <div class="article-card__banner">
           {%- if article.data.cover_image -%}
-            <img src="{{ article.data.cover_image }}" alt="" class="article-card__img">
+            <img src="{{ article.data.cover_image }}" alt="" class="article-card__img" loading="lazy">
           {%- else -%}
             <img src="/images/rails.jpg" alt="" class="article-card__img">
           {%- endif -%}
@@ -27,7 +27,7 @@ pagination:
             {{ category }}
           </button>
           {%- endfor -%}
-          <h3>{{ article.data.title }}</h3>
+          <h2>{{ article.data.title }}</h2>
           <p class="article-card__body">{{ article.templateContent | excerpt }}</p>
           <div class="article-card__meta">
             <div class="article-card__author">{{ meta.authorName }}</div>
