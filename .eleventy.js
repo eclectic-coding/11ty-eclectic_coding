@@ -2,27 +2,31 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
 
-  // Plugin section
-  eleventyConfig.addPlugin(syntaxHighlight);
+    // Watch targets
+    eleventyConfig.addWatchTarget("./src/sass/");
+    eleventyConfig.addWatchTarget("./src/images/");
+    eleventyConfig.addWatchTarget("./src/js/");
 
-  // Watch targets
-  eleventyConfig.addWatchTarget("./src/sass/");
-  eleventyConfig.addWatchTarget("./src/images/");
-  eleventyConfig.addWatchTarget("./src/js/");
+    // Browser sync options
+    eleventyConfig.setBrowserSyncConfig({
+        open: true,
+    });
 
-  eleventyConfig.setBrowserSyncConfig({
-    open: true,
-  });
+    // Pass through copies
+    eleventyConfig.addPassthroughCopy("src/fonts")
+    eleventyConfig.addPassthroughCopy("src/images")
+    eleventyConfig.addPassthroughCopy("src/js")
 
-  // Pass through copies
-  eleventyConfig.addPassthroughCopy("src/fonts")
-  eleventyConfig.addPassthroughCopy("src/images")
-  eleventyConfig.addPassthroughCopy("src/js")
+    // Official plugins
+    eleventyConfig.addPlugin(syntaxHighlight, {
+      preAttributes: { tabindex: 0 }
+    });
 
-  eleventyConfig.addFilter("excerpt", (post) => {
-    const content = post.replace(/(<([^>]+)>)/gi, "");
-    return content.substr(0, content.lastIndexOf(" ", 150)) + " ...";
-  });
+    // Filters
+    eleventyConfig.addFilter("excerpt", (post) => {
+        const content = post.replace(/(<([^>]+)>)/gi, "");
+        return content.substr(0, content.lastIndexOf(" ", 150)) + " ...";
+    });
 
   return {
     dir: {

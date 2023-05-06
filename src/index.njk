@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: layouts/base.njk
 templateEngineOverride: md, njk
 pagination:
   data: collections.articles
@@ -11,21 +11,23 @@ pagination:
 <h1 class="h2 section__header">Latest Blog Posts</h1>
 
 {%- for article in articleList -%}
-  <a href="{{ article.url }}" class="anchor-card">
     <article class="article-card">
       <div class="article-card__content">
         <div class="article-card__banner">
-          {%- if article.data.cover_image -%}
-            <img src="{{ article.data.cover_image }}" alt="" class="article-card__img" loading="lazy">
-          {%- else -%}
-            <img src="/images/rails.jpg" alt="" class="article-card__img">
-          {%- endif -%}
+            <a href="{{ article.url }}" class="anchor-card">
+              {%- if article.data.cover_image -%}
+                <img src="{{ article.data.cover_image }}" alt="" class="article-card__img" loading="lazy">
+              {%- else -%}
+                <img src="/images/rails.jpg" alt="" class="article-card__img">
+              {%- endif -%}
+            </a>
         </div>
         <div>
           {%- for category in article.data.categories -%}
-          <button class="article-card__tags" aria-label="Articles from the {{ category }} category">
-            {{ category }}
-          </button>
+              {%- set tagUrl %}/tags/{{ category | slugify }}/{% endset %}
+              <button class="article-card__tags" aria-label="Articles from the {{ category }} category">
+                <a href="{{ tagUrl }}">{{ category }}</a>
+              </button>
           {%- endfor -%}
           <h2>{{ article.data.title }}</h2>
           <p class="article-card__body">{{ article.templateContent | excerpt }}</p>
@@ -36,7 +38,6 @@ pagination:
         </div>
       </div>
     </article>
-  </a>
 {%- endfor -%}
 
 {% if pagination.pageLinks.length > 1 %}

@@ -5,7 +5,7 @@ module.exports = {
   lang: 'en',
   locale: 'en_us',
   authorName: 'Chuck Smith',
-  authorEmail: 'me@eclecticcoding.com',
+  authorEmail: 'chuck@eclecticcoding.com',
   twitterSite: '@eclecticcoding',
   twitterCreator: '@eclecticcoding',
 };
