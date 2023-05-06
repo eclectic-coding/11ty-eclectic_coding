@@ -2,7 +2,7 @@
 title: Rails Configuration
 date: 2020-04-08
 published: true
-categories: ['Ruby', 'Rails', 'TIL']
+tags: ['Ruby', 'Rails', 'TIL']
 series: false
 cover_image: /images/rails-configuration.jpg
 canonical_url: false

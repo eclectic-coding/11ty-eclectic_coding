@@ -2,7 +2,7 @@
 title: React Boilerplate - Part 2
 date: 2020-05-12
 published: true
-categories: ['react', 'javascript', 'beginners', 'tutorial']
+tags: ['react', 'javascript', 'beginners', 'tutorial']
 series: Streamlined Workflow
 cover_image: /images/quality.jpg
 canonical_rul: false

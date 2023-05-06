@@ -2,7 +2,7 @@
 title: Set Up Rbenv Revisited
 date: 2021-03-03
 published: true
-categories: ['rails', 'ruby', 'webdev']
+tags: ['rails', 'ruby', 'webdev']
 series: false
 cover_image: /images/rubys.jpg
 canonical_rul: false

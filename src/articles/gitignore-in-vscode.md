@@ -2,7 +2,7 @@
 title: 'Gitignore in VSCode'
 date: 2019-07-25
 published: true
-categories: ['GIT', 'VSCode']
+tags: ['GIT', 'VSCode']
 series: false
 cover_image:
 canonical_url: false

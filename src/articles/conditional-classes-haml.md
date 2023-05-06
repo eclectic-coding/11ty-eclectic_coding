@@ -2,7 +2,7 @@
 title: Conditional CSS Classes in HAML
 date: 2020-08-09
 published: true
-categories: ['rails', 'css', 'webdev']
+tags: ['rails', 'css', 'webdev']
 series: false
 canonical_rul: false
 description: I have been working on a new Rails side project called Your Congress, and decided to use HAML, instead of the standard Rails templating language (ERB). Why? Good question. Actually, I just wanted to learn how to use it, to include a new technology in my skills for the Job Search.

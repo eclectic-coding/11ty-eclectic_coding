@@ -2,7 +2,7 @@
 title: Rails Boilerplate
 date: 2020-07-07
 published: true
-categories: ['rails', 'ruby', 'webdev', 'tutorials']
+tags: ['rails', 'ruby', 'webdev', 'tutorials']
 series: Streamlined Workflow
 cover_image: /images/rails.jpg
 canonical_rul: false

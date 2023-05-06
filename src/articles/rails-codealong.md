@@ -2,7 +2,7 @@
 title: Rails Code Along
 date: 2020-08-30
 published: true
-categories: ['rails', 'testing', 'ruby']
+tags: ['rails', 'testing', 'ruby']
 series: false
 cover_image: /images/rails.jpg
 canonical_rul: false

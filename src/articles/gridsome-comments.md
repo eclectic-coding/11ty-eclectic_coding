@@ -2,7 +2,7 @@
 title: Gridsome Post Comments
 date: 2020-06-14
 published: true
-categories: ['gridsome', 'vuejs', 'webdev', 'tutorial']
+tags: ['gridsome', 'vuejs', 'webdev', 'tutorial']
 series: false
 cover_image: /images/comments.jpg
 canonical_rul: false

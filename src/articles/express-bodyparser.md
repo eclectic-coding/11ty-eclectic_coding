@@ -2,7 +2,7 @@
 title: Express Bodyparser
 date: 2020-07-19
 published: true
-categories: ['node', 'webdev', 'javascript']
+tags: ['node', 'webdev', 'javascript']
 series: false
 cover_image: /images/technology.jpg
 canonical_rul: false

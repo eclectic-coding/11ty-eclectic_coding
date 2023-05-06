@@ -2,7 +2,7 @@
 title: Refactor Rails
 date: 2020-08-14
 published: true
-categories: ['rails', 'webdev', 'ruby']
+tags: ['rails', 'webdev', 'ruby']
 series: false
 cover_image: /images/rails.jpg
 canonical_rul: false

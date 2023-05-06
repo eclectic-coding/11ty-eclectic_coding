@@ -2,7 +2,7 @@
 title: HTML Parcel Build
 date: 2020-05-31
 published: true
-categories: ['html', 'javascript', 'beginners', 'tutorials']
+tags: ['html', 'javascript', 'beginners', 'tutorials']
 series: Streamlined Workflow
 cover_image: /images/tile-shapes.jpg
 canonical_rul: false

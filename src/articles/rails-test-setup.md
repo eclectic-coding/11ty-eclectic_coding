@@ -2,7 +2,7 @@
 title: Rails Testing Setup
 date: 2020-08-23
 published: true
-categories: ['rails', 'testing', 'ruby']
+tags: ['rails', 'testing', 'ruby']
 series: false
 cover_image: /images/rails-testing.jpg
 canonical_rul: false

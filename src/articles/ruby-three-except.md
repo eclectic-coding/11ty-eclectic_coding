@@ -2,7 +2,7 @@
 title: Ruby 3.0 adds #except
 date: 2020-10-04
 published: true
-categories: ['ruby', 'webdev']
+tags: ['ruby', 'webdev']
 series: false
 cover_image: /images/ruby-gems.jpg
 canonical_rul: false

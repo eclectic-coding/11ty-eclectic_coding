@@ -2,7 +2,7 @@
 title: Gridsome Pagination
 date: 2020-04-09
 published: true
-categories: ['Gridsome', 'Coding']
+tags: ['Gridsome', 'Coding']
 series: false
 cover_image: /images/pagination.jpg
 canonical_rule: false

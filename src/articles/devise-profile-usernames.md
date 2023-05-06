@@ -2,7 +2,7 @@
 title: Devise Profile Usernames  
 date: 2021-02-02 
 published: true 
-categories: ['rails']
+tags: ['rails']
 series: false 
 cover_image: /images/users.jpg
 canonical_rul: false 

@@ -2,7 +2,7 @@
 title: Rails Basic Template
 date: 2021-01-13
 published: true 
-categories: ['rails', 'ruby', 'tutorial','webdev']
+tags: ['rails', 'ruby', 'tutorial','webdev']
 series: Streamlined Workflow
 cover_image: /images/rails.jpg
 canonical_rul: false 

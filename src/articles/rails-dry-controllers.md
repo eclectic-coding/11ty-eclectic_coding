@@ -2,7 +2,7 @@
 title: Rails DRY Controllers
 date: 2020-09-06
 published: true
-categories: ['rails', 'ruby', 'webdev']
+tags: ['rails', 'ruby', 'webdev']
 series: false
 cover_image: /images/rails-dry.jpg
 canonical_rul: false

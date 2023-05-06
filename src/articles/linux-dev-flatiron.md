@@ -2,7 +2,7 @@
 title: 'Linux Development at Flatiron'
 date: 2019-09-19
 published: true
-categories: ['SQlite','Node','Linux','Postgres']
+tags: ['SQlite','Node','Linux','Postgres']
 series: false
 cover_image: /images/linux-banner.jpg
 canonical_url: false

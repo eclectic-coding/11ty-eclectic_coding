@@ -2,7 +2,7 @@
 title: Rails Gravatar
 date: 2020-09-20
 published: true
-categories: ['rails', 'ruby', 'webdev']
+tags: ['rails', 'ruby', 'webdev']
 series: false
 cover_image: /images/avatar.jpg
 canonical_rul: false

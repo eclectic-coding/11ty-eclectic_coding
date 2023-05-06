@@ -2,7 +2,7 @@
 title: React Boilerplate - Part 1
 date: 2020-05-06
 published: true
-categories: ['react', 'javascript', 'beginners', 'tutorial']
+tags: ['react', 'javascript', 'beginners', 'tutorial']
 series: Streamline Workflow
 cover_image: /images/forklift-packages.jpg
 canonical_rul: false

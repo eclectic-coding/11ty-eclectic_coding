@@ -2,7 +2,7 @@
 title: Rails Multiple Seed Files
 date: 2020-10-11
 published: true
-categories: ['rails', 'database', 'webdev']
+tags: ['rails', 'database', 'webdev']
 series: false
 cover_image: /images/rails-seeds.jpg
 canonical_rul: false

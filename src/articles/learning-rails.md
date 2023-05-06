@@ -2,7 +2,7 @@
 title: Learning Rails
 date: 2021-03-09
 published: true 
-categories: ['rails', 'ruby', 'tutorial']
+tags: ['rails', 'ruby', 'tutorial']
 series: false 
 cover_image: /images/rails.jpg
 description: Have you ever wanted to set up SSL for localhost development on your computer? No? Honestly, as hard as this can be at times, me neither. What changed? Recently, 

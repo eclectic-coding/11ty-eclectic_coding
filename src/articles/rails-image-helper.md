@@ -2,7 +2,7 @@
 title: Rails Image Helper   
 date: 2021-01-11 
 published: true 
-categories: ['rails', 'ruby', 'tutorial']
+tags: ['rails', 'ruby', 'tutorial']
 series: false 
 cover_image: /images/rubys.jpg 
 canonical_rul: false 

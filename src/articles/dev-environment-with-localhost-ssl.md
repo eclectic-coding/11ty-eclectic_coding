@@ -2,7 +2,7 @@
 title: Dev Environment with Localhost SSL
 date: 2021-02-02
 published: true 
-categories: ['rails', 'security', 'tutorial']
+tags: ['rails', 'security', 'tutorial']
 series: false 
 cover_image: /images/security-ssl.jpg 
 canonical_rul: false 

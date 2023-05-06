@@ -3,7 +3,7 @@ title: Streamline Workflow
 date: 2020-05-01
 published: true
 series: Streamline Workflow
-categories: ['webdev', 'parceljs', 'coding']
+tags: ['webdev', 'parceljs', 'coding']
 cover_image: /images/packages.jpg
 canonical_rul: false
 description: It is fun to learn new developing technologies. As you try these new systems, most provide an installation bundler to get the new end user started. This bundler's work well for the beginner and help facilitate more suers trying out new technologies, or to become more interested in a specific technology.

@@ -2,7 +2,7 @@
 title: Rails Search with pg_search
 date: 2020-10-18
 published: true
-categories: ['rails', 'postgres','tutorials']
+tags: ['rails', 'postgres','tutorials']
 series: false
 cover_image: /images/rails-search.jpg
 canonical_rul: false

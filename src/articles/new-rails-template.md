@@ -2,7 +2,7 @@
 title: New Rails Template
 date: 2020-09-27
 published: true
-categories: ['rails', 'ruby', 'webdev']
+tags: ['rails', 'ruby', 'webdev']
 series: Streamlined Workflow
 cover_image: /images/template.jpg
 canonical_rul: false

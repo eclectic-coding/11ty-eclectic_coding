@@ -2,7 +2,7 @@
 title: Learn a New Language
 date: 2020-07-05
 published: true
-categories: ['webdev', 'tutorial']
+tags: ['webdev', 'tutorial']
 series: false
 cover_image: /images/learn-library.jpg
 canonical_rul: false

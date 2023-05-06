@@ -2,7 +2,7 @@
 title: Vuetify Form Validation
 date: 2020-07-21
 published: true
-categories: ['vuejs', 'forms', 'webdev']
+tags: ['vuejs', 'forms', 'webdev']
 series: false
 cover_image: /images/login-form.png
 canonical_rul: false

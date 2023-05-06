@@ -2,7 +2,7 @@
 title: System Automation
 date: 2020-06-21
 published: true
-categories: ['html', 'javascript', 'beginners', 'tutorials']
+tags: ['html', 'javascript', 'beginners', 'tutorials']
 series: false
 cover_image: /images/automate.jpg
 canonical_rul: false

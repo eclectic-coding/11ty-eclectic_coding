@@ -2,7 +2,7 @@
 title: Rails Active Storage
 date: 2020-09-13
 published: true
-categories: ['rails', 'ruby', 'webdev']
+tags: ['rails', 'ruby', 'webdev']
 series: false
 cover_image: /images/active-storage.jpg
 canonical_rul: false

@@ -2,7 +2,7 @@
 title: License file for GIT
 date: 2019-07-23
 published: true
-categories: ['VSCode', 'GIT']
+tags: ['VSCode', 'GIT']
 cover_image:
 canonical_url: false
 description: When you create your Open Source project and published it to GitHub you realize you forgot to create a LICENSE file. This post addresses a quick way to do that from VSCODE.

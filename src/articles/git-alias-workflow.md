@@ -2,7 +2,7 @@
 title: Git Alias Workflow
 date: 2020-08-01
 published: true
-categories: ['webdev', 'git']
+tags: ['webdev', 'git']
 series: Streamlined Workflow
 cover_image: /images/git-shortcut.jpg
 canonical_rul: false
