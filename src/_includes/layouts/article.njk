@@ -4,5 +4,8 @@ templateEngineOverride: md, njk
 ---
 <article class="article">
   <h2>{{ title }}</h2>
+  {%- for tag in tags -%}
+    <div><a href="/tags/{{ tag }}">{{ tag}}</a></div>
+  {% endfor %}
   {{ content | safe }}
 </article>

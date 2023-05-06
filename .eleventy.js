@@ -28,6 +28,19 @@ module.exports = function (eleventyConfig) {
         return content.substr(0, content.lastIndexOf(" ", 150)) + " ...";
     });
 
+    // Return all the tags used in a collection
+    eleventyConfig.addFilter("getAllTags", collection => {
+        let tagSet = new Set();
+        for(let item of collection) {
+            (item.data.tags || []).forEach(tag => tagSet.add(tag));
+        }
+        return Array.from(tagSet);
+    });
+
+    eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
+        return (tags || []).filter(tag => ["article", "articles"].indexOf(tag) === -1);
+    });
+
   return {
     dir: {
       passthroughFileCopy: true,

@@ -2,7 +2,7 @@
 title: Survey App for Flatiron Project
 date: 2020-01-17
 published: true
-tags: ['Coding','JavaScript','Fullstack']
+tags: ['coding','javascript','fullstack']
 series: false
 cover_image: /images/survey-app.jpg
 canonical_url: false

@@ -2,7 +2,7 @@
 title: GIT Cache Helpers
 date: 2019-12-09
 published: true
-tags: ['GIT', 'Security']
+tags: ['git', 'security']
 series: 'GIT Authentication'
 cover_image: /images/git-security.jpg
 canonical_url: false

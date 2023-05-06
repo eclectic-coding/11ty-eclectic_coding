@@ -2,7 +2,7 @@
 title: 'Kill Blocked Ports'
 date: 2019-07-22
 published: true
-tags: ['Gatsby', 'React', 'Commandline']
+tags: ['gatsby', 'geact', 'commandline']
 series: false
 cover_image: /images/blocked.jpg
 canonical_url: false

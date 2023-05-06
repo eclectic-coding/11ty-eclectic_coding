@@ -2,7 +2,7 @@
 title: 'Webstorm and Nuxtjs Linting'
 date: 2020-01-07
 published: true
-tags: ['Webstorm','Nuxtjs','Eslint']
+tags: ['webstorm','nuxtjs','eslint']
 series: false
 cover_image: /images/webstorm-lint.jpg
 canonical_url: false

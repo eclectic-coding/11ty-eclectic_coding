@@ -2,7 +2,7 @@
 title: Linting in React
 date: 2020-01-26
 published: true
-tags: ['React','Productivity','Eslint']
+tags: ['react','productivity','eslint']
 series: true
 cover_image: /images/organized.jpg
 description: Recently I started experimenting with the idea of code linting via ESLint and Prettier. This article covers the configuration of ESLint, Prettier, and Husky in a React project.

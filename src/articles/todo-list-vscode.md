@@ -2,7 +2,7 @@
 title: 'TODO list in VSCode'
 date: 2019-08-14
 published: true
-tags: ['VSCode','Productivity']
+tags: ['vscode','productivity']
 series: false
 cover_image: /images/checklist.jpg
 canonical_url: false

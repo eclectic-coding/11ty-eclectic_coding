@@ -23,10 +23,10 @@ pagination:
             </a>
         </div>
         <div>
-          {%- for category in article.data.categories -%}
-              {%- set tagUrl %}/tags/{{ category | slugify }}/{% endset %}
+          {%- for tag in article.data.tags | filterTagList -%}
+              {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
               <button class="article-card__tags" aria-label="Articles from the {{ category }} category">
-                <a href="{{ tagUrl }}">{{ category }}</a>
+                <a href="{{ tagUrl }}">{{ tag }}</a>
               </button>
           {%- endfor -%}
           <h2>{{ article.data.title }}</h2>

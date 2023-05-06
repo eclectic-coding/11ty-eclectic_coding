@@ -2,7 +2,7 @@
 title: GIT Commit
 date: 2020-04-21
 published: true
-tags: ['GIT', 'Coding', 'Helping']
+tags: ['git', 'coding', 'helping']
 cover_image: /images/support-letters.jpg
 canonical_url: false
 description: Contributing on open source projects can be fun. However, if you have never made a pull request on GitHub, it can be unnerving. I am sharing my experiences and a short list of how to get started.
