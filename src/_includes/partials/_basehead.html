@@ -1,0 +1,10 @@
+{%- set pageTitle %}{{ title + " | " if title }}{{ meta.siteName }}{% endset -%}
+{%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="eleventy">
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{pageDescription}}" />
+<link rel="icon" href="{{ '/favicon.png' | url }}" />
+<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
