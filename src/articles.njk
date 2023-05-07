@@ -1,12 +1,31 @@
 ---
-title: "Articles"
-layout: "layouts/base.njk"
+layout: layouts/base.njk
+templateEngineOverride: md, njk
+pagination:
+    data: collections.articles
+    size: 6
+    alias: articleList
+    reverse: true
 ---
 
-<h1 class="h2 section__header">Latest Blog Posts</h1>
+{% SectionTitle title="Latest Blog Posts" %}
 
-<ul>
-    {% for article in collections.articles -%}
-        <li><a href="{{ article.url }}">{{ article.data.title }}</a></li>
-    {% endfor %}
-</ul>
+{%- for article in articleList -%}
+    {% include "partials/_articlecard.njk" %}
+{%- endfor -%}
+
+{% if pagination.pageLinks.length > 1 %}
+    <nav id="my-pagination" class="pagination" aria-labelledby="my-pagination">
+        {%- if pagination.previousPageLink -%}
+            <a class="pagination__item" href="{{ pagination.previousPageHref | url }}">Newer Articles</a>
+        {%- else -%}
+            <span class="pagination__item--disabled">Previous</span>
+        {%- endif -%}
+
+        {%- if pagination.nextPageLink -%}
+            <a class="pagination__item" href="{{ pagination.nextPageHref | url }}">Older Articles</a>
+        {%- else -%}
+            <span class="pagination__item">Next</span>
+        {%- endif -%}
+    </nav>
+{% endif %}

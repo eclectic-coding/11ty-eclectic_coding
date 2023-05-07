@@ -1,21 +1,32 @@
 ---
 pagination:
-  data: collections
-  size: 1
-  alias: tag
-  filter:
-    - all
-    - article
-    - articles
-  addAllPagesToCollections: true
+    data: collections
+    size: 1
+    alias: tag
+filter:
+- all
+- article
+- articles
+addAllPagesToCollections: true
 layout: layouts/base.njk
 eleventyComputed:
-  title: Tagged “{{ tag }}”
+    title: Tagged “{{ tag }}”
 permalink: "tags/{{ tag | slugify }}/"
 ---
-<h1>Tagged “{{ tag }}”</h1>
+{% set titleText %}
+    Tagged with “{{ tag }}”
+{%- endset %}
+{% SectionTitle title=titleText %}
 
-    {% set postslist = collections[tag] %}
-    {% include "postslist.njk" %}
 
-<p>See <a href="/tags/">all tags</a></p>
+{% for tag in collections.all | getAllTags | filterTagList %}
+    {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+    {%- set label %}Articles from the tag {{ tag }}{% endset %}
+    {% TagButton link=tagUrl, linkText=tag, ariaText=label, tagCloud=true %}
+{% endfor %}
+
+
+{% set articleList = collections[tag] %}
+{%- for article in articleList -%}
+    {% include "partials/_articletagcard.njk" %}
+{%- endfor -%}

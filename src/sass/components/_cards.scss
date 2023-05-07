@@ -87,6 +87,73 @@
   }
 }
 
+.article-card--tags {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 0.60rem;
+  background: var(--background);
+  box-shadow: 0 0.25rem 0.45rem -0.15rem hsla(0, 0%, 0%, 0.1);
+
+  a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+       text-decoration: none;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 1rem 0 0.5rem 0 !important;
+    color: var(--color-primary);
+  }
+
+  &__tags {
+    margin: 0 1rem 0 0;
+    padding: 0.25rem 0.75rem;
+    transition: 0.30s ease-out;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-background-body);
+    color: var(--color-on-background-body);
+    font-size: 1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    @media(max-width: 50ch){ // 701 px
+      margin: 1rem 1rem 1rem 0;
+      padding: 0.25rem;
+    }
+  }
+
+  &__body {
+    margin: 0.5rem 0 1rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    @media(max-width: 70ch){ // 701 px
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 0.25rem;
+    }
+  }
+
+  &__author {
+    font-weight: bold;
+  }
+}
+
 .header__posts {
   margin-top: 2rem;
   padding-left: 1.5rem;
@@ -97,4 +164,21 @@
 .anchor-card {
   color: currentColor;
   text-decoration: none;
+}
+
+.tagcloud {
+  margin: 4px;
+  padding: 2px 6px;
+  font-size: 0.90rem;
+  border: 0 solid transparent;
+  border-radius: 5px;
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+
+  a {
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    text-decoration: none;
+  }
+
 }

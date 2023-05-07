@@ -1,0 +1,17 @@
+<article class="article-card--tags">
+    <div>
+        {%- for tag in article.data.tags | filterTagList -%}
+            {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+            {%- set label %}Articles from the tag {{ tag }}{% endset %}
+            {% TagButton link=tagUrl, linkText=tag, ariaText=label %}
+        {%- endfor -%}
+        <a href="{{ article.url }}">
+            <h2>{{ article.data.title }}</h2>
+            <p class="article-card--tags__body">{{ article.templateContent | excerpt }}</p>
+            <div class="article-card--tags__meta">
+                <div class="article-card--tags__author">{{ meta.authorName }}</div>
+                <time datetime="{{ article.data.date }}">{{ article.data.date }}</time>
+            </div>
+        </a>
+    </div>
+</article>
