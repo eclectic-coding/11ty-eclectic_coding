@@ -22,8 +22,9 @@
   "author": "eclectic-coding",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "@11ty/webc": "^0.11.4",
     "a11y-color-tokens": "^0.6.0",
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
