@@ -1,5 +1,6 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const SectionTitle = require('./src/_includes/components/SectionTitle.js');
+const TagButton = require('./src/_includes/components/TagButton.js');
 
 module.exports = function (eleventyConfig) {
   // Watch targets
@@ -23,6 +24,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("SectionTitle", SectionTitle);
+  eleventyConfig.addShortcode("TagButton", TagButton);
 
   // Filters
   eleventyConfig.addFilter("excerpt", (post) => {

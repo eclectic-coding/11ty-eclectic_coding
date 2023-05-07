@@ -11,7 +11,7 @@ pagination:
 {% SectionTitle title="Latest Blog Posts" %}
 
 {%- for article in articleList -%}
-  {% include "partials/_articlecard.html" %}
+  {% include "partials/_articlecard.njk" %}
 {%- endfor -%}
 
 {% if pagination.pageLinks.length > 1 %}
