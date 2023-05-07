@@ -5,7 +5,7 @@ resumed 5/6/2023
 
 ### Audits
 - [ ] Convert images to modern formats (webp)
-- [ ] Add `lang` tag to root `html`
+- [x] Add `lang` tag to root `html`
 
 ### Menubar
 - [x] Finish Mobile menu
