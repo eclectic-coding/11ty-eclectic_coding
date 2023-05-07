@@ -4,7 +4,7 @@ date: 2020-06-14
 published: true
 tags: ['gridsome', 'vuejs', 'webdev', 'tutorial']
 series: false
-cover_image: /images/comments.jpg
+cover_image: /images/comments.webp
 canonical_rul: false
 description: In this tutorial, we will look at how to add Disqus commenting into a Gridsome site. Since Gridsome is part of the Vue.js eco-system, these steps should work with any Vue.js site
 ---

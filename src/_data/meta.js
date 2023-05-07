@@ -3,7 +3,7 @@ module.exports = {
   siteName: "EclecticCoding",
   siteDescription: "My miscellaneous ramblings of my tech journey. Most of the resources are focused on the Ruby on Rails, but also Frontend SCSS, some Vuejs, and Node.",
   lang: 'en',
-  locale: 'en_us',
+  locale: 'en',
   authorName: 'Chuck Smith',
   authorEmail: 'chuck@eclecticcoding.com',
   twitterSite: '@eclecticcoding',

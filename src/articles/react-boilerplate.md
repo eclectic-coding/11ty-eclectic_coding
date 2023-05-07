@@ -4,7 +4,7 @@ date: 2020-05-06
 published: true
 tags: ['react', 'javascript', 'beginners', 'tutorial']
 series: Streamline Workflow
-cover_image: /images/forklift-packages.jpg
+cover_image: /images/forklift-packages.webp
 canonical_rul: false
 description: Welcome to week two in this article series, "Streamline Workflow." In this week's article we will explore a Boilerplate configuration for React. The idea to to have a turnkey solution, so you can start developing quickly, instead of wasting time reconfiguring the default Create React App generated starter.
 ---
@@ -166,7 +166,3 @@ Next week:
 - Setup project styling
 
 Stay tuned.
-
-
-
-

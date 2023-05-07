@@ -4,18 +4,18 @@ date: 2021-03-03
 published: true
 tags: ['rails', 'ruby', 'webdev']
 series: false
-cover_image: /images/rubys.jpg
+cover_image: /images/rubys.webp
 canonical_rul: false
 description: I have been working on a n
 ---
-I have been working on setting up a new operating system distribution. I took some time to test out a different package manager, but ended up going back to my familiar toolset. Thia article will talk about package manager to manage Ruby version. 
+I have been working on setting up a new operating system distribution. I took some time to test out a different package manager, but ended up going back to my familiar toolset. Thia article will talk about package manager to manage Ruby version.
 
 ## Package Managers
-So what is a package manager? 
+So what is a package manager?
 
 > A package manager or package-management system is a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs for a computer's operating system consistently.
 
-They give you the ability to manage multiple versions of the same packages (i.e. Node.js, Ruby, etc.). 
+They give you the ability to manage multiple versions of the same packages (i.e. Node.js, Ruby, etc.).
 
 When it comes to **Ruby**, there are three major package managers to consider.
 
@@ -26,8 +26,8 @@ When it comes to **Ruby**, there are three major package managers to consider.
 [RBENV](https://github.com/rbenv/rbenv) - this is my preference, and the focus of this article. A major pull of `rbenv` for me is that it's *lighter*, and by that I mean that it doesn't have to throw as many hooks into your computer system as `rvm`, although there is some load to the terminal. This is the exact same reason I prefer [N](https://github.com/tj/n) to manage Node versus [NVM](https://github.com/nvm-sh/nvm), because there is ZERO terminal load. This may be the source of another article.
 
 ## Enter the Clones
-So, Homebrew offers a `rbenv` package install, and Ubuntu does as well. I have used both, but I prefer to have more control, so I just clone the repositories. 
-To set up **RBENV** there is the default way: 
+So, Homebrew offers a `rbenv` package install, and Ubuntu does as well. I have used both, but I prefer to have more control, so I just clone the repositories.
+To set up **RBENV** there is the default way:
 - Clone rbenv to `.rbenv`
 - Clone rbenv-build to `.rbenv/plugins`
 - Set up `.rbenv/bin` in your `$PATH`
@@ -46,19 +46,19 @@ wget -q https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer 
 ```
 
 ## Default Gems
-There in one `rbenv` plugin which I prefer to set up and that is `rbenv-default-gems`. This plugin will manage installing a select set of gems whenever you update your version of `ruby`. Install the plugin: 
+There in one `rbenv` plugin which I prefer to set up and that is `rbenv-default-gems`. This plugin will manage installing a select set of gems whenever you update your version of `ruby`. Install the plugin:
 
 ```shell
 git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems
 ```
 Create a simple text file: `touch ~/.rbenv/default-gems`. In this file create your link of preferred gems to install/update:
-```shell 
+```shell
 bundler
 rails
 ```
 Now install your ruby version: `rbenv install 3.0.0`
 
-## Updating 
+## Updating
 When new versions of Ruby are releases it is important to update rbenv. There are two ways to do this. Since, you have literally cloned the repository, you can `git pull`, but there are two directories to do that in:
 ```shell
 cd ~/.rbenv

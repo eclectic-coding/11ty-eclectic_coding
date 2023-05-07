@@ -4,7 +4,7 @@ date: 2019-08-14
 published: true
 tags: ['vscode','productivity']
 series: false
-cover_image: /images/checklist.jpg
+cover_image: /images/checklist.webp
 canonical_url: false
 description: This article addresses a document level TODO list as your are coding and developing an application.
 ---
@@ -53,6 +53,6 @@ One of the nicest features, in my option, is the ability to highlight the notes 
 ```
 Here is the result:
 
-![Screenshot.](https://thepracticaldev.s3.amazonaws.com/i/vporbgidpzomglepojz2.png)
+![Screenshot.](https://thepracticaldev.s3.amazonaws.com/i/vporbgidpzomglepojz2.webp)
 
 Give TODO Tree a try and if I can help with your configuration message me.

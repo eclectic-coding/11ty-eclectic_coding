@@ -4,7 +4,7 @@ date: 2020-01-17
 published: true
 tags: ['coding','javascript','fullstack']
 series: false
-cover_image: /images/survey-app.jpg
+cover_image: /images/survey-app.webp
 canonical_url: false
 description: This was an exciting project pulling together all that I have been learning at Flatiron School over the last four months. I have come to appreciate the simplicity of setting up an API with Rails.
 ---

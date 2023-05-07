@@ -4,7 +4,7 @@ date: 2020-06-21
 published: true
 tags: ['html', 'javascript', 'beginners', 'tutorials']
 series: false
-cover_image: /images/automate.jpg
+cover_image: /images/automate.webp
 canonical_rul: false
 description: So I have been writing about streaming our workflow, but this does not have to be about coding. How about our productivity on our systems? In this article I focusing on scheduling some jobs on Unix based systems, mostly centered around securing data.
 ---

@@ -4,7 +4,7 @@ date: 2020-05-31
 published: true
 tags: ['html', 'javascript', 'beginners', 'tutorials']
 series: Streamlined Workflow
-cover_image: /images/tile-shapes.jpg
+cover_image: /images/tile-shapes.webp
 canonical_rul: false
 description: So far in this series, we have looked at the benefits of using a Boilerplate to streamline your workflow, and a two articles on how to setup a React Boilerplate with [parcel][parcel] instead of Webpack. In this article we will explore a proposed workflow instead of traditional means to compile and bundle a traditional HTML/SCSS project using Parcel.
 ---

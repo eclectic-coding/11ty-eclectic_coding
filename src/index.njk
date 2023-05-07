@@ -16,16 +16,16 @@ pagination:
         <div class="article-card__banner">
             <a href="{{ article.url }}" class="anchor-card">
               {%- if article.data.cover_image -%}
-                <img src="{{ article.data.cover_image }}" alt="" class="article-card__img" loading="lazy">
+                <img src="{{ article.data.cover_image }}" alt="{{ article.data.title }}" class="article-card__img" loading="lazy">
               {%- else -%}
-                <img src="/images/rails.jpg" alt="" class="article-card__img">
+                <img src="/images/rails.webp" alt="" class="article-card__img">
               {%- endif -%}
             </a>
         </div>
         <div>
           {%- for tag in article.data.tags | filterTagList -%}
               {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-              <button class="article-card__tags" aria-label="Articles from the {{ category }} category">
+              <button class="article-card__tags" type="button" aria-label="Articles from the {{ category }} category">
                 <a href="{{ tagUrl }}">{{ tag }}</a>
               </button>
           {%- endfor -%}
@@ -55,4 +55,3 @@ pagination:
     {%- endif -%}
   </nav>
 {% endif %}
-

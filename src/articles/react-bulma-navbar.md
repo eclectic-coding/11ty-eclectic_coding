@@ -4,7 +4,7 @@ date: 2020-06-06
 published: true
 tags: ['react', 'Bulma', 'webdev', 'beginner']
 series: false
-cover_image: /images/navigation.jpg
+cover_image: /images/navigation.webp
 canonical_rul: false
 description: When starting a new project, the styling we use is often one of the first considerations. I generally prefer to code my own SCSS, but often there in not time, and I reach for a CSS framework of some kind. I tend to prefer the utility systems like Tailwind or Bulma.
 ---
@@ -43,7 +43,7 @@ Delete the following files and their associated import statements:
 
 Congratulations! You are the proud owner of an ugly site.
 
-![](./images/ugly-site.png)
+![](./images/ugly-site.webp)
 
 ## Add Bulma for Styling
 
@@ -57,13 +57,13 @@ We are going to create a new functional component for our menu. As seen below, I
 import React from 'react'
 
 export default function Navbar() {
-  
+
   return (
     <nav className='navbar' role='navigation' aria-label='main navigation'>
       <div className='navbar-brand'>
         <a href='/' className='navbar-item'>
           <img
-            src='https://bulma.io/images/bulma-logo.png'
+            src='https://bulma.io/images/bulma-logo.webp'
             alt='Logo'
             width='112'
             height='28'
@@ -147,7 +147,7 @@ export default function Navbar() {
       <div className='navbar-brand'>
         <a href='/' className='navbar-item'>
           <img
-            src='https://bulma.io/images/bulma-logo.png'
+            src='https://bulma.io/images/bulma-logo.webp'
             alt='Logo'
             width='112'
             height='28'
@@ -194,4 +194,3 @@ Remember this is just the default example from Bulma. In a live site it would be
 [SITE]: https://react-bulma-navbar.now.sh/
 [BOILERPLATE]: https://github.com/eclectic-coding/react-parcel-boilerplate
 [CRA]: https://reactjs.org/docs/create-a-new-react-app.html
-

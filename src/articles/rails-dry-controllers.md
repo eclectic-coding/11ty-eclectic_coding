@@ -4,7 +4,7 @@ date: 2020-09-06
 published: true
 tags: ['rails', 'ruby', 'webdev']
 series: false
-cover_image: /images/rails-dry.jpg
+cover_image: /images/rails-dry.webp
 canonical_rul: false
 description: In any programming language, it is important to create DRY (Don't Repeat Yourself) code. In this article we will explore three methods of writing Rails CRUD controllers, and use a gem to abstract controllers even more.
 ---
@@ -30,7 +30,7 @@ Each resource controller is set up with a `before_filter` for the resource, and 
 class ArticlesController < ApplicationController
   before_action :set_article, only: %i[show edit update destroy]
   ...
-    
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
@@ -168,9 +168,9 @@ class PostsController < ApplicationController
     @post.save
     respond_with(@post)
   end
-  
+
   ...
-    
+
 end
 
 ```

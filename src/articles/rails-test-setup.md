@@ -4,7 +4,7 @@ date: 2020-08-23
 published: true
 tags: ['rails', 'testing', 'ruby']
 series: false
-cover_image: /images/rails-testing.jpg
+cover_image: /images/rails-testing.webp
 canonical_rul: false
 description: How do you setup a Rails project for testing? In this article we will explore what a testing suite, using RSpec and other tools, for a robust developers experience.
 ---
@@ -22,7 +22,7 @@ Create and migrate the databases.
 rails db:prepare && rails db:migrate
 ```
 You can start the `rails server` and see the familiar Rails splash screen.
-![](./images/rails-splash-screen.png)
+![](./images/rails-splash-screen.webp)
 
 ## Basic Testing
 To set up testing we are going to use RSpec, which according to the RSpec web site: "*Behaviour Driven Development for Ruby. Making TDD Productive and Fun.*" I am not sure about all of that, but it is what we are setting u0p.
@@ -184,7 +184,7 @@ So how does it work?
 - If you want the entire test suite run, hit enter at the command prompt.
 - Fuubar will displace a nice progress bar.
 
-![](./images/guard.png)
+![](./images/guard.webp)
 
 Notice that we have one test pass, and the progress bar is noted as **Completed Test** which we defined in the `fuubar` configuration.
 
@@ -216,7 +216,7 @@ end
 ```
 Notice we have the path to a coverage report stored in a new `coverage` directory in the root of our project path. This way we can analyse our code coverage. You can open in your web browser.
 
-![](./images/coverage.png)
+![](./images/coverage.webp)
 
 ## Code style
 Lastly, I want to install `rubocop` to manage our code presentation quality. We will install three gems and add them to our development group:

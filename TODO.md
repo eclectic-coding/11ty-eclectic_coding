@@ -1,6 +1,11 @@
 
-## TODO List 
+## TODO List
 starting 2/18/2022
+resumed 5/6/2023
+
+### Audits
+- [x] Convert images to modern formats (webp)
+- [x] Add `lang` tag to root `html`
 
 ### Menubar
 - [x] Finish Mobile menu
@@ -15,10 +20,9 @@ starting 2/18/2022
 - [x] Article SEO
 
 ### Collections
-- [ ] Categories
-- [ ] Build single category feed
-- [ ] Make category buttons clickable on article cards
-- [ ] Categories
+- [x] Tags
+- [x] Build single tag feed
+- [x] Make tag buttons clickable on article cards
 
 ### Articles
 - [ ] Add Articles feed page and pagination
@@ -35,7 +39,7 @@ starting 2/18/2022
 - [ ] Fix footer icons target size (a11y)
 
 ### Contact
-- [ ] Decide on contact form page 
+- [ ] Decide on contact form page
 
 ### Projects
 - [ ] Add projects feature

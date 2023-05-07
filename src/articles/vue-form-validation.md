@@ -4,7 +4,7 @@ date: 2020-07-21
 published: true
 tags: ['vuejs', 'forms', 'webdev']
 series: false
-cover_image: /images/login-form.png
+cover_image: /images/login-form.webp
 canonical_rul: false
 description: Recently I have been learning Express and this app I have been working on will eventually be a Survey App, a more full featured version of the I did as part of Flatiron. This app utilizes MongoDB, Express, and a Vue.js frontend. I recently finished the user accounts authentication on the backend with JWT, and added the registration and login forms, routing, and logic to the frontend.
 ---
@@ -23,7 +23,7 @@ I decided to set up form validation on the frontend because it will give the use
 ## Vuelidate
 I am only going to cover the Registration Form here because the Login form is a stripped down version of the same form. We will cover each section of this form:
 
-![](./images/screenshot-form.png)
+![](./images/screenshot-form.webp)
 
 ### Name Field
 First we will need to install the vuelidate package with `yarn add vuelidate` or `npm install --save vuelidate`.

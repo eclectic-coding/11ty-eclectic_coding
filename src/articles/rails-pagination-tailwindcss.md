@@ -4,7 +4,7 @@ date: 2020-05-23
 published: true
 tags: ['rails', 'tailwindcss', 'webdev']
 series: false
-cover_image: /images/styling.png
+cover_image: /images/styling.webp
 canonical_rul: false
 description: Adding pagination to any web site can be a challenge. Luckily, there are a few ways to accomplish this is Rails. This article will add pagination to a simple post and then we will configure Tailwind for styling to pagination block.
 ---
@@ -75,7 +75,7 @@ The post index page is setup like so with the appropriate styling:
 ```
 This is how our post feed appears now:
 
-![Feed page screenshot](./images/pagination-feed.png)
+![Feed page screenshot](./images/pagination-feed.webp)
 
 ## Pagination
 
@@ -112,7 +112,7 @@ end
 ```
 You now have a working pagination, however, it is not styled:
 
-![Screenshot of pagination block](./images/pagination-block.png)
+![Screenshot of pagination block](./images/pagination-block.webp)
 
 ## Styling Pagination
 
@@ -122,11 +122,11 @@ So, we will have to add the styling ourselves and fortunately `will_paginate` do
 
 ```html
 <div role="navigation" aria-label="Pagination" class="pagination">
-  <span class="previous_page disabled">← Previous</span> 
-  <em class="current" aria-label="Page 1" aria-current="page">1</em> 
-  <a rel="next" aria-label="Page 2" href="/posts?page=2">2</a> 
-  <a aria-label="Page 3" href="/posts?page=3">3</a> 
-  <a aria-label="Page 4" href="/posts?page=4">4</a> 
+  <span class="previous_page disabled">← Previous</span>
+  <em class="current" aria-label="Page 1" aria-current="page">1</em>
+  <a rel="next" aria-label="Page 2" href="/posts?page=2">2</a>
+  <a aria-label="Page 3" href="/posts?page=3">3</a>
+  <a aria-label="Page 4" href="/posts?page=4">4</a>
   <a class="next_page" rel="next" href="/posts?page=2">Next →</a>
 </div>
 ```
@@ -135,11 +135,11 @@ So the first addition we add is to add a `div` wrapper that can target to center
 ```html
 <div class="text-center my-4">
     <div role="navigation" aria-label="Pagination" class="pagination">
-      <span class="previous_page disabled">← Previous</span> 
-      <em class="current" aria-label="Page 1" aria-current="page">1</em> 
-      <a rel="next" aria-label="Page 2" href="/posts?page=2">2</a> 
-      <a aria-label="Page 3" href="/posts?page=3">3</a> 
-      <a aria-label="Page 4" href="/posts?page=4">4</a> 
+      <span class="previous_page disabled">← Previous</span>
+      <em class="current" aria-label="Page 1" aria-current="page">1</em>
+      <a rel="next" aria-label="Page 2" href="/posts?page=2">2</a>
+      <a aria-label="Page 3" href="/posts?page=3">3</a>
+      <a aria-label="Page 4" href="/posts?page=4">4</a>
       <a class="next_page" rel="next" href="/posts?page=2">Next →</a>
     </div>
 </div>
@@ -156,7 +156,7 @@ We will add the new styling to the `app/javascript/css/application.scss` stylesh
   @apply my-2 py-2;
 }
 
-@import "~tailwindcss/utilities"; 
+@import "~tailwindcss/utilities";
 ```
 FYI. Make sure you add your custom styling between the `tailwindcss/components` and `utilities`.
 
@@ -177,6 +177,6 @@ Now finally we add the hover styling:
 
 Now you have a nice pagination block styled with Tailwind CSS:
 
-![](./images/pagination-styled.png)
+![](./images/pagination-styled.webp)
 
 Thank you for reading and message me with any question you may have.

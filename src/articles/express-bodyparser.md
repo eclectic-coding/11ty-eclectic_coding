@@ -4,7 +4,7 @@ date: 2020-07-19
 published: true
 tags: ['node', 'webdev', 'javascript']
 series: false
-cover_image: /images/technology.jpg
+cover_image: /images/technology.webp
 canonical_rul: false
 description: I am learning how much I love back-end architectures. This week I decided to through away the tutorials and code my first Node Express server. After reviewing a lot of code samples I started to notice something around one middleware package. The way that Body-parser is including in a project can be subjective.
 ---
@@ -79,8 +79,3 @@ Remember each methods works the same way. It is just a different way to present 
 This has been fun. Leave a comment or send me a DM on [Twitter](http://twitter.com/EclecticCoding).
 
 Shameless Plug: If you work at a great company and you are in the market for a Software Developer with a varied skill set and life experiences, send me a message on [Twitter](http://twitter.com/EclecticCoding) and check out my [LinkedIn](http://www.linkedin.com/in/dev-chuck-smith).
-
-
-
-
-

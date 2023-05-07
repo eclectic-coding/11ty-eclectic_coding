@@ -1,14 +1,14 @@
 ---
-title: Devise Profile Usernames  
-date: 2021-02-02 
-published: true 
+title: Devise Profile Usernames
+date: 2021-02-02
+published: true
 tags: ['rails']
-series: false 
-cover_image: /images/users.jpg
-canonical_rul: false 
+series: false
+cover_image: /images/users.webp
+canonical_rul: false
 description: I have worked on several projects recently with user accounts managed by Devise, and I have been working at changing the way user profile URL's are set up and presented to the user. In this article I will address this task and use a few of my recent favorite gems.
 ---
-I have worked on several projects recently with user accounts managed by Devise, and I have been working at changing the way user profile URL's are set up and presented to the user. In this article I will address this task and use a few of my recent favorite gems. 
+I have worked on several projects recently with user accounts managed by Devise, and I have been working at changing the way user profile URL's are set up and presented to the user. In this article I will address this task and use a few of my recent favorite gems.
 
 **TLTR**: If you just want the [code](https://github.com/eclectic-coding/article_devise_usernames) go grab it, and post questions or responses if you like.
 
@@ -20,7 +20,7 @@ Here are the project parameters:
 
 **name_of_person** - We will use the [name_of_person](https://github.com/basecamp/name_of_person) gem by Basecamp. This gem creates a pseudo-field for full name (requires `first_name` and `last_name` in the `User` table). It has many other abstractions, but this is the only feature we will use.
 
-**friendly_id** - We will use the [friendly_id](https://github.com/norman/friendly_id) gem, which created slugs that we can map to a predetermined route. This is a method you can use throughout an application, not just with the User models.  
+**friendly_id** - We will use the [friendly_id](https://github.com/norman/friendly_id) gem, which created slugs that we can map to a predetermined route. This is a method you can use throughout an application, not just with the User models.
 
 ## Basic set up
 We will start by setting up a basic Rails app: `rails new awesome_app`, and set up a static controller for a home route: `rails g controller static home`.
@@ -29,7 +29,7 @@ Configure the routes to load the basic `home.html.erb`, in `config/routes.rb`:
 
 ```ruby
 Rails.application.routes.draw do
-   
+
   root "static#home"
 
 end
@@ -95,7 +95,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
   end
 end
 ```
-Devise will automatically add the appropriate routes, but it always a good idea to check, so make sure that in `config/routes.rb` the route is found: `devise_for: users`. 
+Devise will automatically add the appropriate routes, but it always a good idea to check, so make sure that in `config/routes.rb` the route is found: `devise_for: users`.
 
 Add to the `User` model to use the `name_of_person` gem, by adding `has_person_name`:
 ```ruby
@@ -104,7 +104,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  
+
   has_person_name
 end
 ```
@@ -122,7 +122,7 @@ class ApplicationController < ActionController::Base
 end
 ```
 We will need to add the `name` field to the sign-in and sign-up forms, so we need to generate the views: `rails generate devise:views`. In `app/views/devise/registrations/new.html.erb`, `.../registrations/edit.html.erb`, and `.../sessions/new.html.erb` add the following for the name field:
-```html 
+```html
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -137,21 +137,21 @@ We will need to add the `name` field to the sign-in and sign-up forms, so we nee
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: false, autocomplete: "email" %>
   </div>
-  
-  ... 
+
+  ...
 ```
 Almost there ... We need to create a page to contain the User Profile, so we need to create a `User` controller:
-``` 
+```
 rails g controller User show
 ```
 Edit controller:
-```ruby 
+```ruby
 class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
   end
-  
+
 end
 ```
 Lastly, update the routes, so for the route to the profile page:
@@ -160,7 +160,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :users, only: [:show]
-  
+
   root "static#home"
 
 end
@@ -168,13 +168,13 @@ end
 All done with Devise. You can restart your `rails server`, open the development site, and create a User Account. When you are redirected to the `root_path`, click the "User Profile" link in the navbar. You will be redirected to a path, something like `http://localhost:3000/users/1`. This is not the goal, so lets move on.
 
 ## Friendly ID
-Add the `friendly_id` gem to the `Gemfile` and `bundle install`, then create a migration: 
+Add the `friendly_id` gem to the `Gemfile` and `bundle install`, then create a migration:
 ```
 rails g migration AddSlugToUsers slug:uniq
 ```
-This will create a unique slug. In our case we are going to use the first and last name fields, and it will create a unique username. So in my case `/users/chuck-smith`. If this is not unique, maybe there is another "Chuck Smith" in the user table, it will make it unique: `/users/chuck-s`. 
+This will create a unique slug. In our case we are going to use the first and last name fields, and it will create a unique username. So in my case `/users/chuck-smith`. If this is not unique, maybe there is another "Chuck Smith" in the user table, it will make it unique: `/users/chuck-s`.
 
-Next we need to generate friendly_id: `rails generate friendly_id`, and migrate the database: `rails db:migrate`. 
+Next we need to generate friendly_id: `rails generate friendly_id`, and migrate the database: `rails db:migrate`.
 
 We use Friendly_Id by extending the User model, and define the `:name` column, from `name_of_person` as the slug field:
 ```ruby
@@ -207,12 +207,12 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :users, only: [:show], param: :slug
-  
+
   root "static#home"
 
 end
 ```
-If you already have `Users` created, from the `rails console` execute: `User.find_each(&:save)`, which will update the new slug column. 
+If you already have `Users` created, from the `rails console` execute: `User.find_each(&:save)`, which will update the new slug column.
 
 Now, where you log in and browse to your User Profile the URL is friendlier (forgive the pun): `/users/chuck-smith`.
 
@@ -222,7 +222,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :users, only: [:show], param: :slug, path: ""
-  
+
   root "static#home"
 
 end
@@ -233,4 +233,3 @@ Notice I have added a path key to the `:users` resource which is empty. So, now 
 This has been fun. Leave a comment or send me a DM on [Twitter](http://twitter.com/EclecticCoding).
 
 Shameless Plug: If you work at a great company, and you are in the market for a Software Developer with a varied skill set and life experiences, send me a message on [Twitter](http://twitter.com/EclecticCoding) and check out my [LinkedIn](http://www.linkedin.com/in/dev-chuck-smith).
-
