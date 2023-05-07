@@ -1,4 +1,5 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function (eleventyConfig) {
 
@@ -21,6 +22,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight, {
       preAttributes: { tabindex: 0 }
     });
+
 
     // Filters
     eleventyConfig.addFilter("excerpt", (post) => {
