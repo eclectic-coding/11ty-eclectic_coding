@@ -4,7 +4,7 @@ date: 2020-09-13
 published: true
 tags: ['rails', 'ruby', 'webdev']
 series: false
-cover_image: /images/active-storage.jpg
+cover_image: /images/active-storage.webp
 canonical_rul: false
 description: On any web application, the ability to use images are tantamount. In  a Ruby on Rails project, using Active Storage increases the flexibility to use external storage services and to seamlessly create user interaction.
 ---
@@ -186,7 +186,7 @@ So, we need to revisit our User `show.html.erb` template file to include the new
 ```
 This is the same code we used for the edit template. This is the result:
 
-!['Screenshot of User Profile with new Avatar'](images/user-profile.png)
+!['Screenshot of User Profile with new Avatar'](images/user-profile.webp)
 
 ## Navbar
 Originally, I had placeholder paths in the Navbar, so we revisit to make the links workable. Also, we will include the avatar, and a check if one exist.

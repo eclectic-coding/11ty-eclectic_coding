@@ -4,7 +4,7 @@ date: 2020-09-27
 published: true
 tags: ['rails', 'ruby', 'webdev']
 series: Streamlined Workflow
-cover_image: /images/template.jpg
+cover_image: /images/template.webp
 canonical_rul: false
 description: In this article we take a look at a more complete Rails template, to start a new Rails project. Why? With a custom template, you can start developing your project immediately already preconfigured with the gems, packages, and settings you like to use.
 ---

@@ -10,11 +10,11 @@ description: When you create your Open Source project and published it to GitHub
 
 So, you create an Open Source project and published it to [GitHub](https://github.com). But you realize you forgot to create a LICENSE file when you [created](https://help.github.com/en/articles/adding-a-license-to-a-repository) the repository. What do you do now?
 
-![alt text ](./images/license_git.jpg "License File.")
+![alt text ](./images/license_git.webp "License File.")
 
 You can copy a LICENSE file from another repository and include it in your next _commit_, but there an **EASIER** way?
 
-![alt text](./images/vscode-marketplace.png "VSCODE Extensions Marketplace.")
+![alt text](./images/vscode-marketplace.webp "VSCODE Extensions Marketplace.")
 
 ##VSCODE Extensions
 If you are using VSCODE as your IDE, you already know there are a ton of extensions for almost everything you need. Today, I found this nifty extension, called [Licenser](https://marketplace.visualstudio.com/items?itemName=ymotongpoo.licenser) which installs a LICENSE file to your project.

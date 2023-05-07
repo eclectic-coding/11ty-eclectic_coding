@@ -4,7 +4,7 @@ date: 2020-08-01
 published: true
 tags: ['webdev', 'git']
 series: Streamlined Workflow
-cover_image: /images/git-shortcut.jpg
+cover_image: /images/git-shortcut.webp
 canonical_rul: false
 description: Continuing this article series about Streamlining Workflow, must include a way to streamline our git commands. This article uses my own aliases and a GIST below for the full list.
 ---
@@ -59,10 +59,10 @@ Working with an upstream
 I have a few aliases for `git log`
 
 Pretty format, with decorate is `git ls`:
-![](./images/git-ls.png)
+![](./images/git-ls.webp)
 
 Pretty format, with decorate and `--numstat` is `git ll`:
-![](./images/git-ll.png)
+![](./images/git-ll.webp)
 
 These are my basic aliases that I use the most. Again, refer to the [GIST]() for a complete list.
 

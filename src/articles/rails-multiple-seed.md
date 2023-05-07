@@ -4,7 +4,7 @@ date: 2020-10-11
 published: true
 tags: ['rails', 'database', 'webdev']
 series: false
-cover_image: /images/rails-seeds.jpg
+cover_image: /images/rails-seeds.webp
 canonical_rul: false
 description: If you have a larger Rails project, or a project with many resources, managing one database seed file can get out of hand. In the name of DRY-ing out code, this article walks you through how to abstract your seed data into multiple files.
 ---
@@ -19,7 +19,7 @@ When you execute `rails db:migrate`, Rails will only run the file: `db/seeds.rb`
 Dir[File.join(Rails.root, "db", "seeds", "*.rb")].sort.each do |seed|
 
   puts "seeding - #{seed}. loading seeds, for real!"
-  
+
   load seed
 end
 ```

@@ -15,14 +15,14 @@ As you probably already know, the `gitignore` file is used in your local GIT rep
 
 Just like with the LICENSE file example, you could easily copy a `gitignore` file from another repository and include it in your next _commit_, but there is an **EASIER** way?
 
-![alt text](./images/vscode-marketplace.png "VSCODE Extensions Marketplace.")
+![alt text](./images/vscode-marketplace.webp "VSCODE Extensions Marketplace.")
 
 ##VSCODE Extensions
 If you are using VSCODE as your IDE, you already know there are a ton of extensions for almost everything you need. Today, I found this nifty extension, called [.gitignore Generator](https://marketplace.visualstudio.com/items?itemName=piotrpalarz.vscode-gitignore-generator) which installs a `.gitignore file`, specific for your type of project, to your root project directory.
 
 So, to use, go to the Command Palette, and type `gitignore`, and select `Generate .gitignore File.` A selection box will pop-up (see below):
 
-![Screenshot of selection menu.](./images/vscode-screenshot.png "Screenshot of selection menu.")
+![Screenshot of selection menu.](./images/vscode-screenshot.webp "Screenshot of selection menu.")
 
 It will generate a `.gitignore` file based on the [gitignore](https://www.gitignore.io/) API.
 

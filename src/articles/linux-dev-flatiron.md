@@ -4,7 +4,7 @@ date: 2019-09-19
 published: true
 tags: ['sqlite','node','linux','postgres']
 series: false
-cover_image: /images/linux-banner.jpg
+cover_image: /images/linux-banner.webp
 canonical_url: false
 description: This article walks you through my environment setup while I was attending Flatiron School Bootcamp in Software Engineering.
 ---
@@ -57,7 +57,7 @@ You can issue the command `rvm list known` to view the available versions. To in
 
 
 <div style="width: 150px; height: auto" >
-    ![rubys](../../assets/images/rubys.jpg)
+    ![rubys](../../assets/images/rubys.webp)
 </div>
 
 ### Ruby gems
@@ -66,4 +66,3 @@ Ruby gems are basically a library of code, which are easily accessible to you.
 2. Install Learn gems. This is a lengthy install, so enjoy a cup of coffee ☕️ `gem install learn-co`.
 3. Install bundler gem: `gem install bundler`.
 4. Install nokogiri with: `gem install nokogiri`. According to the Learn website: “Nokogiri is a gem to help parse HTML — useful when we want to scrape websites.” This gem install worked on my Fedora system without any issues, but if you encounter problems, Nokogiri documentation offers a complete troubleshooting guide. I have installed successfully on MAC, Ubuntu, POP_OS, and Fedora without any breaking issues.
-

@@ -4,7 +4,7 @@ date: 2020-09-20
 published: true
 tags: ['rails', 'ruby', 'webdev']
 series: false
-cover_image: /images/avatar.jpg
+cover_image: /images/avatar.webp
 canonical_rul: false
 description: In the previous article in this series, we learned about Active Storage. We set up an interface to allow a user to add an Avatar to their user profile. Part Two of this two part series, we extend this feature to use, as a fallback image, the Gravatar service.
 ---
@@ -31,7 +31,7 @@ def avatar_url_for(user, opts = {})
       )
     else
       hash = Digest::MD5.hexdigest(user.email.downcase)
-      "https://secure.gravatar.com/avatar/#{hash}.png?s=#{size}"
+      "https://secure.gravatar.com/avatar/#{hash}.webp?s=#{size}"
     end
  end
  ```
@@ -61,7 +61,7 @@ We can edit this code to use our helper, which includes the logic to check for a
 </li>
 ```
 So, if the user hasn't setup an avatar on Gravatar or their user profile the fallback image is used:
-!["Gravatar default image"](./images/default-gravatar.png)
+!["Gravatar default image"](./images/default-gravatar.webp)
 
 ## Edit profile
 

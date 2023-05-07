@@ -4,9 +4,9 @@ date: 2020-01-07
 published: true
 tags: ['webstorm','nuxtjs','eslint']
 series: false
-cover_image: /images/webstorm-lint.jpg
+cover_image: /images/webstorm-lint.webp
 canonical_url: false
-description: Recently I starting experimenting with Vue.js and Nuxt.js, partly out of curiosity and partly to learn a new framework, before I start a job search in a few months. This article is about my troubleshooting getting Nuxt.js, Linting, and Webstorm to play nicely together.
+description: Recently I starting experimenting with Vue.js and Nuxt.js, partly out of curiosity and partly to learn a new framework, before I start a job search in a few months. This article is about my troubleshooting getting Nuxt.js, Linting, and Webstorm to play nicely together.‰
 ---
 Recently I starting experimenting with [Vue.js](https://vuejs.org/) and [Nuxt.js](https://nuxtjs.org/), partly out of curiosity and partly to learn a new framework, before I start a job search in a few months. This article is about my troubleshooting getting Nuxt.js, linting, and [Webstorm](https://www.jetbrains.com/webstorm/) to play nicely together. Webstorm in its default configuration, uses code formating based on [Standard JS](https://standardjs.com/) but can easily be configured to new standards.
 
@@ -15,7 +15,7 @@ Recently I starting experimenting with [Vue.js](https://vuejs.org/) and [Nuxt.js
 ## Introduction
 The first time I created a Nuxtjs project and opened [Webstorm]() and used the [Reformat Code](https://www.jetbrains.com/help/webstorm/reformat-file-dialog.html) tool, my world turned red (36 errors). Again, the purpose of this article is to troubleshoot getting Nuxt.js, Linting, and Webstorm to play nicely together.
 
-![eslint-error.png](./images/eslint-error.png)
+![eslint-error.webp](./images/eslint-error.webp)
 
 ### Setup
 To get started create a Nuxt App: `yarn create nuxt-app nuxt-linting` or `npx create-nuxt-app nuxt-linting`. I am selecting the defaults but I add Axios (although not required for thus tutorial), select both Eslint, and Prettier. You output should look something like below:

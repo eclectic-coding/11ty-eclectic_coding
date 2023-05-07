@@ -4,7 +4,7 @@ date: 2020-08-30
 published: true
 tags: ['rails', 'testing', 'ruby']
 series: false
-cover_image: /images/rails.jpg
+cover_image: /images/rails.webp
 canonical_rul: false
 description: So I am always looking for ways to increase my skills on the Ruby on Rails platform. As I look for first professional dev job, afters years as a hobbyist, I have to say, Rails would be by dream job.
 ---
@@ -42,9 +42,9 @@ The default tutorial uses the [Gritter]() gem to implement Growl pop-up notifica
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.gritter/1.7.4/css/jquery.gritter.css">
 ```
 
-It worked perfectly. 
+It worked perfectly.
 
-I know this is a shorter article but I am just starting. Pay attention as I document the journey through this tutorial and the enhancements along the way. 
+I know this is a shorter article but I am just starting. Pay attention as I document the journey through this tutorial and the enhancements along the way.
 
 ## Footnote
 

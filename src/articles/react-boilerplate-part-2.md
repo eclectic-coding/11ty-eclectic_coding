@@ -4,7 +4,7 @@ date: 2020-05-12
 published: true
 tags: ['react', 'javascript', 'beginners', 'tutorial']
 series: Streamlined Workflow
-cover_image: /images/quality.jpg
+cover_image: /images/quality.webp
 canonical_rul: false
 description: Welcome to week three in this article series, "Streamlined Workflow." In this week's article we will continue to build out a Boilerplate configuration for React. Last week we built out a working boilerplate but without much functionality. This week we will look at code quality, deployment enhancements, and styling.
 ---
@@ -26,7 +26,7 @@ Parcel generates the bundle on start up of the development server in the `dist` 
 ## Code Quality
 So far we have developed a React Environment. From this point forward, we will build out some features to enhance the development experience, code quality, both in errors and formatting. The first tool we will install is [Eslint](https://eslint.org/), which "statically analyzes your code to quickly find problems," and automatically fix the errors. This program is highly customizable and includes many preset configuration for different environments. To get started, install the following packages:
 ```
-yarn add -D eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react 
+yarn add -D eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
 ```
 
 Now we need to define our configuration. The default install of Create React App (CRA), uses a configuration object in the `package.json` like so:
@@ -46,7 +46,7 @@ We need to create a configuration file for **Eslint**: `touch .eslintrc` in the 
   ]
 }
 ```
-**Code Format**  
+**Code Format**
 Where Eslint finds potential syntactical errors in your code, [Prettier](https://prettier.io/) checks a specific set of rules to maintain an uniform code format. For instance:
 - Single or double quotes?
 - Semi-colons or not
@@ -180,7 +180,3 @@ I would encourage you to study [StatCounter](https://gs.statcounter.com/) and yo
 This is a good solid Boilerplate. Try it out and leave comments or suggestions.
 
 Next week we will look at another use for Parcel.
-
-
-
-

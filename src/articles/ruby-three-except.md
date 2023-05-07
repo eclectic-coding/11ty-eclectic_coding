@@ -4,7 +4,7 @@ date: 2020-10-04
 published: true
 tags: ['ruby', 'webdev']
 series: false
-cover_image: /images/ruby-gems.jpg
+cover_image: /images/ruby-gems.webp
 canonical_rul: false
 description: After the last four or five years of the promises of a new major version of Ruby (Ruby 3), it looks like this new version is set to release on December 25, 2020. This article will look at one new feature.
 ---
@@ -43,4 +43,3 @@ Nice edition to the Ruby language with more to come. Stay tuned for more.
 This has been fun. Leave a comment or send me a DM on [Twitter](http://twitter.com/EclecticCoding).
 
 Shameless Plug: If you work at a great company, and you are in the market for a Software Developer with a varied skill set and life experiences, send me a message on [Twitter](http://twitter.com/EclecticCoding) and check out my [LinkedIn](http://www.linkedin.com/in/dev-chuck-smith).
-

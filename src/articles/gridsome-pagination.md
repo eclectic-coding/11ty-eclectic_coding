@@ -4,7 +4,7 @@ date: 2020-04-09
 published: true
 tags: ['gridsome', 'coding']
 series: false
-cover_image: /images/pagination.jpg
+cover_image: /images/pagination.webp
 canonical_rule: false
 description: When ever I set up a blog, there are a few features which are must haves, linkable taxonomy (i.e. tags or categories) and pagination. No one wants an eternal page. These tasks can be challenging but it is super easy in Gridsome.
 ---
@@ -26,31 +26,31 @@ In Gridsome, the GraphQL query handles the data collection. Where is a standard 
 
 ```
 query ($page: Int) {
-  posts: allPost(perPage: 5, page: $page, filter: { published: 
+  posts: allPost(perPage: 5, page: $page, filter: { published:
     { eq: true }}) @paginate {
     totalCount
-    pageInfo { 
-      totalPages 
-      currentPage 
-      isFirst 
-      isLast 
-      } 
-    edges { 
-      node { 
-      id 
-      title 
+    pageInfo {
+      totalPages
+      currentPage
+      isFirst
+      isLast
+      }
+    edges {
+      node {
+      id
+      title
       date (format: "MMM DD, YYYY")
-      timeToRead 
-      description 
-      cover_image (width: 770, height: 380, blur: 10) 
-      path tags { 
-      id 
-      title 
-      path 
-          } 
-        } 
-      } 
-    } 
+      timeToRead
+      description
+      cover_image (width: 770, height: 380, blur: 10)
+      path tags {
+      id
+      title
+      path
+          }
+        }
+      }
+    }
   }
   ```
 
@@ -72,8 +72,8 @@ Then at the bottom of the template section add the `Pager` component:
 Now, the output has no styling so we need to handle that with [properties](https://gridsome.org/docs/pagination/#pager-component) available on the Pager Component.
 First to style the links, you can add a `:linkClass` to style the pagination links. But you will need to also include a second class to style the pagination container. So, my Pager element looks so:
 ```
-<Pager :info="$page.posts.pageInfo" 
-       linkClass="pager__link" 
+<Pager :info="$page.posts.pageInfo"
+       linkClass="pager__link"
        class="pager" />
 ```
 My styling to match my theme looks so:

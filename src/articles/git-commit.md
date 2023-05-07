@@ -3,7 +3,7 @@ title: GIT Commit
 date: 2020-04-21
 published: true
 tags: ['git', 'coding', 'helping']
-cover_image: /images/support-letters.jpg
+cover_image: /images/support-letters.webp
 canonical_url: false
 description: Contributing on open source projects can be fun. However, if you have never made a pull request on GitHub, it can be unnerving. I am sharing my experiences and a short list of how to get started.
 ---
@@ -30,7 +30,7 @@ So, "Where do you contribute?" Starting by looking at rough spots in the softwar
 ## Basics
 To contribute to a project you need to become familiar with the **Triangle Workflow**
 
-![Git Triangle Workflow Image.](./images/triangle-workflow.png)
+![Git Triangle Workflow Image.](./images/triangle-workflow.webp)
 *Credit*: [Git 2.5, including multiple worktrees and triangular workflows][WORKFLOW]
 
 The basics are as follows:
