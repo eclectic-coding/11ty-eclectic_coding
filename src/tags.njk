@@ -18,6 +18,14 @@ permalink: "tags/{{ tag | slugify }}/"
 {%- endset %}
 {% SectionTitle title=titleText %}
 
+
+{% for tag in collections.all | getAllTags | filterTagList %}
+    {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+    {%- set label %}Articles from the tag {{ tag }}{% endset %}
+    {% TagButton link=tagUrl, linkText=tag, ariaText=label, tagCloud=true %}
+{% endfor %}
+
+
 {% set articleList = collections[tag] %}
 {%- for article in articleList -%}
     {% include "partials/_articletagcard.njk" %}
