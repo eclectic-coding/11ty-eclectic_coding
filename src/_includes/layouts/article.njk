@@ -4,9 +4,12 @@ templateEngineOverride: md, njk
 ---
 <article class="article">
   <h2>{{ title }}</h2>
-  {%- for tag in tags -%}
-    <div><a href="/tags/{{ tag }}">{{ tag}}</a></div>
-  {% endfor %}
+
+  {%- for tag in tags | filterTagList -%}
+    {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+    {%- set label %}Articles from the tag {{ tag }}{% endset %}
+    {% TagButton link=tagUrl, linkText=tag, ariaText=label, tagCloud=false %}
+  {%- endfor -%}
 
   {{ content | safe }}
 </article>
