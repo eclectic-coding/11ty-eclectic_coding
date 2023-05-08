@@ -25,17 +25,17 @@ resumed 5/6/2023
 - [x] Make tag buttons clickable on article cards
 
 ### Articles
-- [ ] Add Articles feed page and pagination
+- [x] Add Articles feed page and pagination
 - [ ] Add article card animation effect
-- [ ] Add button for more articles on home page
+- [ ] Add button for more articles on home page (after Hero completed)
 
 ### Sidebar
 - [ ] Add Side bar with tag cloud
 - [ ] Add download resume interface
 
 ### Home Page
-- [ ] Design Hero section
-- [ ] Reduce the latest blog section to three articles with no pagination
+- [ ] Design Hero section ([#24](https://github.com/eclectic-coding/11ty-eclectic_coding/issues/24))
+- [ ] Reduce the latest blog section to three articles with no pagination ([#24](https://github.com/eclectic-coding/11ty-eclectic_coding/issues/24))
 - [ ] Fix footer icons target size (a11y)
 
 ### Contact

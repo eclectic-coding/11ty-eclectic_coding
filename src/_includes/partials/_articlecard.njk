@@ -12,9 +12,9 @@
         </div>
         <div>
             {%- for tag in article.data.tags | filterTagList -%}
-            {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-            {%- set label %}Articles from the tag{{ tag }}{% endset %}
-            {% TagButton link=tagUrl, linkText=tag, ariaText=label, tagCloud=false %}
+                {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+                {%- set label %}Articles from the tag{{ tag }}{% endset %}
+                {% TagButton link=tagUrl, linkText=tag, ariaText=label, tagCloud=false %}
             {%- endfor -%}
             <h2>{{ article.data.title }}</h2>
             <p class="article-card__body">{{ article.templateContent | excerpt }}</p>
