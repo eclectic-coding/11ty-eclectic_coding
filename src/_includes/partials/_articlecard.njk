@@ -20,7 +20,7 @@
             <p class="article-card__body">{{ article.templateContent | excerpt }}</p>
             <div class="article-card__meta">
                 <div class="article-card__author">{{ meta.authorName }}</div>
-                <time datetime="{{ article.data.date }}">{{ article.data.date.toDateString() }}</time>
+                <time datetime="{{ article.data.date }}">{{ article.data.date | readableDate }}</time>
             </div>
         </div>
     </div>

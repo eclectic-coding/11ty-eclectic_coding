@@ -1,6 +1,7 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const SectionTitle = require('./src/_includes/components/SectionTitle.js');
 const TagButton = require('./src/_includes/components/TagButton.js');
+const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   // Watch targets
@@ -27,6 +28,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("TagButton", TagButton);
 
   // Filters
+  eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
+    // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+    return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "ccc LLL dd yyyy");
+  });
+
+  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+    // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  });
+
   eleventyConfig.addFilter("excerpt", (post) => {
     const content = post.replace(/(<([^>]+)>)/gi, "");
     return content.substr(0, content.lastIndexOf(" ", 150)) + " ...";
