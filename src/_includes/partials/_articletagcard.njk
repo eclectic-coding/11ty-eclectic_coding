@@ -10,7 +10,7 @@
             <p class="article-card--tags__body">{{ article.templateContent | excerpt }}</p>
             <div class="article-card--tags__meta">
                 <div class="article-card--tags__author">{{ meta.authorName }}</div>
-                <time datetime="{{ article.data.date }}">{{ article.data.date }}</time>
+                <time datetime="{{ article.data.date }}">{{ article.data.date | readableDate }}</time>
             </div>
         </a>
     </div>
