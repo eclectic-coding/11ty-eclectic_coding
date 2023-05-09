@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ meta.lang }}">
+<head>
+    {% include "partials/_basehead.html" %}
+</head>
+
+<body class="site-layout">
+{% include "partials/_navbar.html" %}
+
+{% include "partials/_hero.html" %}
+
+<main class="container content">
+    {{ content | safe }}
+</main>
+
+{% include "partials/_footer.html" %}
+
+<script src="js/script.js"></script>
+</body>
+</html>
