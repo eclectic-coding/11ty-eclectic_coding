@@ -39,18 +39,35 @@ header {
       font-size: 1.3rem;
       font-weight: bold;
     }
+
+    @media (min-width: 70rem) {
+      min-width: 30ch;
+      max-width: 50%;
+    }
+
+    @media (max-width: 60rem) {
+      //min-width: 30ch;
+      min-width: 100%;
+      margin: 1rem auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   img {
     justify-self: end;
-    width: 80%;
-    height: min(65vh, 600px);
-    transition: 180ms width ease-in;
-    object-fit: cover;
-    object-position: 5vw -5vmin;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin-right: 10rem;
+    //height: 200px;
+    //object-fit: cover;
+    //object-position: 5vw -5vmin;
 
-    @media (min-width: 60rem) {
-      width: 60%;
+    @media (max-width: 60rem) {
+      display: none;
     }
   }
 }
