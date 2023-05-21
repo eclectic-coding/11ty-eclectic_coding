@@ -17,8 +17,9 @@ $type-scales: (
 // stylelint-enable
 
 @function type-ratio($scale) {
-  @if (map-get($type-scales, $scale)) {
+  @if map-get($type-scales, $scale) {
     @return map-get($type-scales, $scale);
+
   } @else if(type-of($scale) == number) {
     @return $scale;
   } @else {

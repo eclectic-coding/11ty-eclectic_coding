@@ -1,3 +1,8 @@
+import { inject } from '@vercel/analytics';
+
+inject();
+
+
 const navMenuBtn = document.getElementById('mobile-menu-btn');
 const navMenuContainer = document.getElementById('mobile-menu');
 
