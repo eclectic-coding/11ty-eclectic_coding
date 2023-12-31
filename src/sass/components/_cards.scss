@@ -173,10 +173,11 @@
   color: var(--color-on-background);
   font-size: 0.90rem;
 
+  // stylelint-disable  no-descending-specificity
   a {
     background-color: var(--color-background);
     color: var(--color-on-background);
     text-decoration: none;
   }
-
+  // stylelint-enable
 }

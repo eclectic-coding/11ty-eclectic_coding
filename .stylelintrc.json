@@ -214,18 +214,9 @@
     ],
     "font-weight-notation": "named-where-possible",
     "function-url-no-scheme-relative": true,
-    "comment-word-disallowed-list": [
-      [
-        "/^TODO:/"
-      ],
-      {
-        "severity": "warning"
-      }
-    ],
     "custom-property-pattern": null,
     "color-function-notation": "legacy",
     "hue-degree-notation": "number",
-    "number-leading-zero": "always",
     "at-rule-empty-line-before": [
       "always",
       {
@@ -250,15 +241,6 @@
         ],
         "ignore": [
           "after-comment"
-        ]
-      }
-    ],
-    "block-closing-brace-newline-after": [
-      "always",
-      {
-        "ignoreAtRules": [
-          "if",
-          "else"
         ]
       }
     ],
