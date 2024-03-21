@@ -69,16 +69,15 @@ form {
   }
 
   &::after {
-    content: "";
     justify-self: end;
     width: 0.8em;
     height: 0.5em;
     background-color: currentColor;
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    content: "";
   }
 
   select {
-    appearance: none;
     width: 100%;
     margin: 0;
     padding: 0 1em 0 0;
@@ -89,6 +88,7 @@ form {
     font-size: inherit;
     line-height: inherit;
     cursor: inherit;
+    appearance: none;
 
     // Remove dropdown arrow in IE10 & IE11
     // @link https://www.filamentgroup.com/lab/select-css.html
@@ -169,13 +169,13 @@ form {
   }
 
   .input__control::before {
-    content: "";
     width: 0.5em;
     height: 0.5em;
     transform: scale(0);
     transition: 140ms transform ease-in-out;
     border-radius: 50%;
     box-shadow: inset 1em 1em var(--color-primary);
+    content: "";
   }
 
   input:checked + .input__control::before {

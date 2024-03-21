@@ -3,7 +3,6 @@
 $color-links: "var(--color-primary)" !default;
 $color-grey-hue: $color-primary !default;
 $color-background-body: $color-background !default;
-// stylelint-disable-next-line
 $color-grey-hue: hue($color-grey-hue);
 $font-family: 'Baloo 2' !default;
 $font-weight-bold: 700 !default;

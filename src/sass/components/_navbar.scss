@@ -83,8 +83,6 @@
   }
 
   &__mobile {
-    visibility: hidden;
-    z-index: 10;
     position: fixed;
     padding: 70px 20px;
     transform: translateX(100%);
@@ -93,6 +91,8 @@
     overflow: auto;
     inset: 0;
     overscroll-behavior: contain;
+    visibility: hidden;
+    z-index: 10;
 
     &--close-btn {
       display: flex;
@@ -148,6 +148,6 @@
 }
 
 .active {
-  visibility: visible;
   transform: translateX(0);
+  visibility: visible;
 }
