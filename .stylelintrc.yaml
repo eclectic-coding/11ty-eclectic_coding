@@ -224,3 +224,15 @@ rules:
         - mixin
         - return
         - warn
+    # Disallow "@extend" in scss.
+    # http://csswizardry.com/2016/02/mixins-better-for-performance/
+    # http://vanseodesign.com/css/sass-mixin-or-extend/
+    # Besides performance, @extend actually *changes* the selector precedence by creating a compound
+    # selector, which can lead to ambiguous results.
+  at-rule-disallowed-list:
+    - extend
+  # Extremely useful for typos, and anything emergent can be ignored by this rule
+  property-no-unknown:
+    - true
+    - ignoreProperties:
+        - contain
