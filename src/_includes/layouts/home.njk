@@ -7,7 +7,9 @@
 <body class="site-layout">
 {% include "partials/_navbar.html" %}
 
-{% include "partials/_hero.html" %}
+{% if page.url === '/' %}
+    {% include "partials/_hero.html" %}
+{% endif %}
 
 <main class="container content">
     {{ content | safe }}
