@@ -202,18 +202,25 @@ rules:
     font-size:
       - "rem"
       - "em"
-  # The following prefix rules are enabled since we use autoprefixer
   at-rule-no-vendor-prefix: true
   media-feature-name-no-vendor-prefix: true
   selector-no-vendor-prefix: true
   value-no-vendor-prefix: true
-  # Usually if you're nesting past 3 levels deep there's a problem
   max-nesting-depth: 3
-  # Because we adhere to BEM we can limit the amount of necessary compound selectors. Most should
-  # just be 1 level selector. However, modifiers can introduce an additional compound selector.
-  # Furthermore, generic qualifying selectors (e.g. `[dir="rtl"]`) can introduce yet another level.
   selector-max-compound-selectors: 4
-  # For specificity: disallow IDs (0). Allow for complex combinations of classes, pseudo-classes,
-  # attribute modifiers based on selector-max-compound-selectors, plus an addition for
-  # pseudo-classes (4). Allow for pseudo-elements (1).
   selector-max-specificity: 0,4,1
+  at-rule-no-unknown:
+    - true
+    - ignoreAtRules:
+        - at-root
+        - content
+        - each
+        - else
+        - error
+        - for
+        - function
+        - include
+        - if
+        - mixin
+        - return
+        - warn
